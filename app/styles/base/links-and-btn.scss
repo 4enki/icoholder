@@ -15,6 +15,7 @@ a {
     transition: .2s ease;
   }
 
+  /*
   &:visited {
     color: $link-visited-color;
 
@@ -22,7 +23,7 @@ a {
       color: $link-hover-color;
       transition: .2s ease;
     }
-  }
+  }*/
 
   &:active,
   &.active {
@@ -67,11 +68,13 @@ button:disabled,
     &:hover,
     &.hover {
       background-color: darken(#00B96E, 10%);
+      color: #ffffff;
     }
 
     &:focus,
     &.focus {
       background-color: darken(#00B96E, 15%);
+      color: #ffffff;
     }
 
     &[disabled=disabled],
@@ -81,6 +84,18 @@ button:disabled,
       color: rgb(255, 255, 255);
       background-color: rgb(214, 217, 220);
       border-color: rgb(214, 217, 220);
+    }
+  }
+
+  &-outline {
+    border-width: 2px;
+    border-color: #D91AA2;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &:hover {
+      border-color: darken(#D91AA2, 15%);
+      color: #ffffff;
     }
   }
 }
