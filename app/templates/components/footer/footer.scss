@@ -1,0 +1,78 @@
+.footer {
+  padding: 60px 90px 40px 90px;
+  background-color: #11111B;
+  color: rgba(255, 255, 255, .3);
+
+  &_wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
+
+.footer-company {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+
+  &_about {
+    font-family: PTSans-Caption;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-right: 70px;
+    flex-basis: 300px;
+    min-width: 300px;
+  }
+
+  &_menu {
+    flex: 1 100%;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &-header {
+    font-family: Futura-Medium;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, .3);
+    letter-spacing: 2.29px;
+    margin: 0 0 16px 0;
+    padding: 0;
+
+    & > a {
+      color: rgba(255, 255, 255, .3);
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  &_item {
+    margin-bottom: 10px;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  &_link {
+    font-family: Futura-Medium;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, .3);
+    border-bottom: 0;
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
