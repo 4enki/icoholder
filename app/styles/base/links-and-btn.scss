@@ -98,4 +98,13 @@ button:disabled,
       color: #ffffff;
     }
   }
+
+  &-pink {
+    background-color: #D91AA2;
+
+    &:hover {
+      background-color: darken(#D91AA2, 15%);
+      color: #ffffff;
+    }
+  }
 }
