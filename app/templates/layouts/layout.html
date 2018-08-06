@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html lang="en" class="no-js">
   <head>
   {% block head %}
     <meta charset="utf-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
 
-    <title>{% if title %}{{ title }}{% else %}Шаблон проекта быстрого старта{% endif %}</title>
-    <meta name="description" content="{% if description %}{{ description }}{% else %}Шаблон проекта быстрого старта{% endif %}"/>
-    <meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}слова, ключевые{% endif %}" />
+    <title>{% if title %}{{ title }}{% else %}A template for a quick start{% endif %}</title>
+    <meta name="description" content="{% if description %}{{ description }}{% else %}A template for a quick start{% endif %}"/>
+    <meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}keyword, keyword{% endif %}" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="imagetoolbar" content="no" />
@@ -18,8 +18,6 @@
 
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="address=no" />
-
-    <meta name="google" value="notranslate" />
 
     {% include "layouts/favicons.html" %}
     {% include "layouts/social.html" %}
@@ -36,10 +34,10 @@
   {% endblock %}
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% else %}{% endif %}>
+    {% block header %}{% endblock %}
     <main>
       {% block content %}{% endblock %}
     </main>
-    {% include "blocks/footer/footer.html" %}
+    {% include "components/footer/footer.html" %}
   </body>
 </html>
-
