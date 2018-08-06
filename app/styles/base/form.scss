@@ -66,3 +66,9 @@ textarea {
     border-bottom-color: #1C2030;
   }
 }
+
+textarea.form-control {
+  min-height: 150px;
+  max-height: 290px;
+  resize: vertical;
+}
