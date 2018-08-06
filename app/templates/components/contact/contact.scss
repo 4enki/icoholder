@@ -1,0 +1,33 @@
+.contact {
+  background-color: #fff;
+  border-top: 1px solid #11111B;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  &_wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+.contact-form {
+
+  &_wrap {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &_col {
+
+    &:first-child {
+      min-width: 430px;
+      margin-right: 90px;
+    }
+
+    &:last-child {
+      min-width: 600px;
+    }
+  }
+}

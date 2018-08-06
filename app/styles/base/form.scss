@@ -27,3 +27,42 @@ input:placeholder {
 textarea {
   hyphens: auto;
 }
+
+.form-group,
+.form-actions {
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-actions {
+
+  &.to-right {
+    justify-content: flex-end;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: PTSans-Caption;
+  font-size: 16px;
+  color: #1C2030;
+  letter-spacing: 0;
+  line-height: 18px;
+  font-weight: 400;
+  transition: .25s ease;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(28, 32, 48, .3);
+  padding: 13px 20px 14px 0;
+
+  &:hover {
+    border-bottom-color: #1C2030;
+  }
+}
