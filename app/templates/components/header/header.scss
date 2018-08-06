@@ -1,3 +1,8 @@
 .header {
   background: #11111B;
+
+  &_wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 }
