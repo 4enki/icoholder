@@ -2,10 +2,29 @@
   padding: 60px 90px 40px 90px;
   background-color: #11111B;
   color: rgba(255, 255, 255, .3);
+  position: relative;
 
   &_wrap {
     max-width: 1180px;
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
+  }
+
+  &_bg,
+  &_logo {
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  &_logo {
+    bottom: 34px;
+
+    svg { margin-right: 5px; }
   }
 }
 
@@ -75,4 +94,12 @@
       color: rgba(255, 255, 255, 1);
     }
   }
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 60px;
 }
