@@ -23,8 +23,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -40px;
+  margin-left: -40px;
 }
 
 .row.reverse {
@@ -763,8 +763,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .col-lg {
