@@ -113,6 +113,12 @@ code {
     line-height: 90px;
     top: -75px;
     left: -160px;
+    z-index: 0;
+  }
+
+  &_title {
+    position: relative;
+    z-index: 1;
   }
 
   &_description {
@@ -125,5 +131,18 @@ code {
     line-height: 35px;
 
     p:last-child { margin-bottom: 0; }
+  }
+
+  &.headline-dark {
+    color: #ffffff;
+
+    &:before {
+      opacity: 1;
+      color: #000000;
+    }
+
+    .headline_description {
+      color: #ffffff;
+    }
   }
 }
