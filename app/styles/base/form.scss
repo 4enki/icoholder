@@ -1,4 +1,4 @@
-$form-control-height:    46px;
+$form-control-height:    56px;
 
 *::placeholder {
   color: $placeholder-color;
@@ -35,6 +35,7 @@ textarea {
   display: flex;
   position: relative;
   margin-bottom: 40px;
+  font-family: 'Futura-Medium';
 
   &:last-child {
     margin-bottom: 0;
@@ -52,7 +53,7 @@ textarea {
   display: block;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  font-family: PTSans-Caption;
+  font-family: 'PTSans-Caption';
   font-size: 16px;
   color: #1C2030;
   letter-spacing: 0;
@@ -71,7 +72,7 @@ textarea {
 }
 
 textarea.form-control {
-  min-height: 220px;
+  min-height: 248px;
   resize: none;
 }
 
@@ -88,15 +89,54 @@ textarea.form-control {
   margin-right: 15px;
   border: 1px solid #D91AA2;
   display: flex;
+  align-items: center;
+  align-content: center;
   width: 100%;
+  cursor: pointer;
+  transition: all .25s ease;
+
+  &:hover {
+    border-color: darken(#D91AA2, 15%);
+
+    .form-service_remove {
+      background-color: darken(#D91AA2, 15%);
+    }
+  }
 
   &:last-child { margin-right: 0; }
 
-  &-add {
+  &_name {
+    padding: 9px 19px 10px 19px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D91AA2;
+    letter-spacing: 0;
+  }
+
+  &_remove {
+    margin-left: auto;
+    background-color: #D91AA2;
+    height: 55px;
+    flex-basis: 55px;
+    width: 55px;
+    min-width: 55px;
+    display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: all .25s ease;
+  }
+
+  &-add {
+    justify-content: center;
     opacity: .3;
     border-color: #1C2030;
+    color: #1C2030;
+
+    &:hover {
+      opacity: 1;
+      border-color: #00B96E;
+      color: #00B96E;
+    }
   }
 }
