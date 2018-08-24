@@ -76,10 +76,9 @@
 
     &-mouse {
       position: relative;
-
-      &_wheel {
-        position: absolute;
-      }
+      left: -14px;
+      top: -14px;
+      animation: scroll 2.3s infinite;
     }
 
     &-help {

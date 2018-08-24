@@ -33,3 +33,19 @@
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(13px, 8px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: translate3d(13px, 16px, 0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translate3d(13px, 8px, 0px);
+  }
+}
