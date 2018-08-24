@@ -8,18 +8,38 @@
     max-width: 1120px;
     margin: 0 auto;
   }
+
+  &-header {
+    max-width: 630px;
+    text-align: left;
+
+    .header-description {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-family: '.SFNSDisplay';
+      font-size: 22px;
+      color: #1C2030;
+      letter-spacing: 0;
+      line-height: 35px;
+    }
+  }
 }
 
 .contact-form {
+  margin-top: 40px;
 
   &_wrap {
     display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     margin-bottom: 40px;
   }
 
   &_col {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
 
     &:first-child {
       min-width: 430px;
@@ -29,5 +49,9 @@
     &:last-child {
       min-width: 600px;
     }
+  }
+
+  &-message {
+    margin-top: auto;
   }
 }

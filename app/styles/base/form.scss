@@ -60,7 +60,7 @@ textarea {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid rgba(28, 32, 48, .3);
-  padding: 13px 20px 14px 0;
+  padding: 13px 0 14px 0;
 
   &:hover {
     border-bottom-color: #1C2030;
@@ -68,7 +68,6 @@ textarea {
 }
 
 textarea.form-control {
-  min-height: 150px;
-  max-height: 290px;
-  resize: vertical;
+  min-height: 220px;
+  resize: none;
 }
