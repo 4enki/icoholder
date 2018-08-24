@@ -105,3 +105,20 @@ code {
 .text-pink {
   color: $pink-color;
 }
+
+.headline {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    opacity: 0.11;
+    font-family: 'Futura-Medium';
+    font-size: 156px;
+    color: #3A3F54;
+    letter-spacing: 0;
+    line-height: 90px;
+    top: -75px;
+    left: -160px;
+  }
+}
