@@ -93,6 +93,7 @@
     font-family: 'Futura-Medium';
     font-size: 16px;
     line-height: 16px;
+    padding: 30px 0;
     color: #ffffff;
     letter-spacing: 2.29px;
     text-align: left;
@@ -111,7 +112,7 @@
         position: absolute;
         content: '';
         right: 0;
-        top: calc( 16px - ( 7px / 2 ) );
+        top: calc( 50% + 2px );
         transform: translateY(-50%);
         @include size(11px, 7px);
         background-image: svg-load('arrow-bottom.svg');
