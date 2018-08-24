@@ -74,6 +74,14 @@
     justify-content: center;
     flex-direction: column;
 
+    &-mouse {
+      position: relative;
+
+      &_wheel {
+        position: absolute;
+      }
+    }
+
     &-help {
       margin-top: 15px;
       font-family: 'Futura-Medium';
