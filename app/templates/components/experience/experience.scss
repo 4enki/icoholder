@@ -80,10 +80,19 @@
     &--odd {
 
 
-      .experience-detail:nth-child(3) {
-        margin-right: 0;
-        position: relative;
-        top: -180px;
+      .experience-detail {
+        height: 100%;
+
+        &:nth-child(3) {
+          margin-right: 0;
+          position: relative;
+          top: -180px;
+          margin-bottom: 0;
+        }
+
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
       }
     }
   }
