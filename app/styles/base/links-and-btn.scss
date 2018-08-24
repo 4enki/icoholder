@@ -50,7 +50,6 @@ button:disabled,
   color: rgb(255, 255, 255);
   font-family: Futura-Medium;
   font-size: 16px;
-  color: #FFFFFF;
   letter-spacing: 0;
   line-height: 18px;
   white-space: nowrap;
@@ -94,7 +93,8 @@ button:disabled,
     padding-right: 50px;
 
     &:hover {
-      border-color: darken(#D91AA2, 15%);
+      background-color: darken(#D91AA2, 10%);
+      border-color: darken(#D91AA2, 10%);
       color: #ffffff;
     }
   }
