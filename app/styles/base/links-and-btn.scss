@@ -107,4 +107,12 @@ button:disabled,
       color: #ffffff;
     }
   }
+
+  &-with-icon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    .button_icon { margin-left: 8px; }
+  }
 }

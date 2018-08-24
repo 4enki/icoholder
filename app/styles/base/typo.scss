@@ -122,6 +122,8 @@ code {
   }
 
   &_description {
+    position: relative;
+    z-index: 1;
     margin-top: 20px;
     margin-bottom: 0;
     font-family: '.SFNSDisplay';
