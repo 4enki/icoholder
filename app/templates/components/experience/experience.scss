@@ -43,15 +43,20 @@
   }
 
   &_summary {
-    min-width: 290px;
+    min-width: 300px;
     margin-right: 60px;
 
     &_name {
-
+      font-size: 35px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      text-shadow: 0 2px 4px rgba(255, 255, 255, .40);
     }
 
     &_description {
-
+      font-size: 15px;
+      color: #FFFFFF;
+      letter-spacing: 0;
     }
   }
 
@@ -63,7 +68,7 @@
     align-content: stretch;
     flex-wrap: wrap;
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
   }
 
   &-detail {
