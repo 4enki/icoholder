@@ -79,7 +79,6 @@
 
     &--odd {
 
-
       .experience-detail {
         height: 100%;
 
@@ -90,9 +89,7 @@
           margin-bottom: 0;
         }
 
-        &:nth-child(2) {
-          margin-bottom: 0;
-        }
+        &:nth-child(2) { margin-bottom: 0; }
       }
     }
   }
