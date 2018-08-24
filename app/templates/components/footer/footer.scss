@@ -104,13 +104,19 @@
   padding-top: 60px;
 }
 
-.rocket-up {
-  right: 60px;
-  bottom: 60px;
+.floating-controls {
   position: fixed;
+  right: 0;
+  bottom: 60px;
+  width: auto;
+  background-color: transparent;
+  display: flex;
   z-index: 1024;
-  opacity: 1;
   transition: all .3s ease;
+}
+
+.rocket-up {
+  opacity: 1;
 
   &_box {
     color: #ffffff;
@@ -131,12 +137,8 @@
 }
 
 .contact-up {
-  right: 140px;
-  bottom: 60px;
-  position: fixed;
-  z-index: 1024;
   opacity: 1;
-  transition: all .3s ease;
+  margin-right: 20px;
 
   &_box {
     color: #ffffff;
