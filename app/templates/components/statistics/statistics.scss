@@ -1,0 +1,43 @@
+.statistics {
+  background-color: #fff;
+  border-top: 1px solid #11111B;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Futura-Medium';
+
+  &_wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  &-list {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &_value {
+    font-size: 45px;
+    color: #D91AA2;
+    letter-spacing: 0;
+    text-shadow: 0 2px 4px rgba(217, 26, 162, .40);
+  }
+
+  &_description {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #11111B;
+    letter-spacing: 0;
+    text-align: justify;
+    max-width: 230px;
+  }
+}
