@@ -9,19 +9,8 @@
     margin: 0 auto;
   }
 
-  &-header {
-    max-width: 630px;
-    text-align: left;
-
-    .header-description {
-      margin-top: 20px;
-      margin-bottom: 0;
-      font-family: '.SFNSDisplay';
-      font-size: 22px;
-      color: #1C2030;
-      letter-spacing: 0;
-      line-height: 35px;
-    }
+  .headline:before {
+    content: 'Contact.';
   }
 }
 
@@ -47,11 +36,8 @@
     }
 
     &:last-child {
+      height: 100%;
       min-width: 600px;
     }
-  }
-
-  &-message {
-    margin-top: auto;
   }
 }
