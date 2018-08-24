@@ -18,6 +18,13 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: all .3s ease;
+
+    .button { opacity: .65; }
+
+    &:hover .button {
+      opacity: 1;
+    }
   }
 
   &-list {
@@ -68,17 +75,26 @@
     align-content: stretch;
     flex-wrap: wrap;
     padding-top: 40px;
-    padding-bottom: 110px;
+    padding-bottom: 20px;
+
+    &--odd {
+
+
+      .experience-detail:nth-child(3) {
+        margin-right: 0;
+        position: relative;
+        top: -180px;
+      }
+    }
   }
 
   &-detail {
     min-width: 300px;
     flex-basis: 300px;
     margin-right: 60px;
+    margin-bottom: 90px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    &:last-child { margin-right: 0; }
 
     &_headline {
       display: flex;
