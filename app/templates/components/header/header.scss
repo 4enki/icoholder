@@ -1,12 +1,22 @@
 .header {
-  background-color: #11111B;
-  height: 100vh;
-  min-height: 1000px;
   position: relative;
-  z-index: 1;
-  padding-top: 250px;
+  overflow: hidden;
+  background-color: #fff;
+
+  &_bell {
+    background-color: #11111B;
+    height: 100vh;
+    min-height: 880px;
+    max-height: 880px;
+    position: relative;
+    z-index: 1;
+    margin: 0 -200px;
+    overflow: hidden;
+    border-radius: 0 0 100% 100%;
+  }
 
   &_wrap {
+    padding-top: 200px;
     max-width: 980px;
     margin: 0 auto;
   }
@@ -50,5 +60,9 @@
 
   .actions-box {
     margin-top: 60px;
+  }
+
+  &_scroll {
+
   }
 }
