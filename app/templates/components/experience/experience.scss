@@ -19,4 +19,48 @@
     align-content: center;
     justify-content: center;
   }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+    font-family: 'Futura-Medium';
+    color: #ffffff;
+  }
+
+  &_item {
+    margin-bottom: 100px;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  &_box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &_summary {
+    min-width: 300px;
+    margin-right: 60px;
+  }
+
+  &_details {
+    border-left: 2px solid #D91AA2;
+    padding-left: 60px;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  &-detail {
+    flex-basis: 50%;
+
+    &_headline {
+
+    }
+  }
 }
