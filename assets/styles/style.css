@@ -912,6 +912,7 @@ button:disabled,
   vertical-align: middle;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .button-green {
@@ -1515,6 +1516,7 @@ code {
 
 .rocket-up {
   opacity: 1;
+  cursor: pointer;
 }
 
 .rocket-up_box {
@@ -1530,13 +1532,13 @@ code {
 }
 
 .rocket-up_box:hover {
-  cursor: pointer;
   background-color: #95126f;
 }
 
 .contact-up {
   opacity: 1;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .contact-up_box {
@@ -1742,6 +1744,7 @@ code {
   font-family: 'Futura-Medium';
   font-size: 16px;
   line-height: 16px;
+  padding: 30px 0;
   color: #ffffff;
   letter-spacing: 2.29px;
   text-align: left;
@@ -1762,7 +1765,7 @@ code {
   position: absolute;
   content: '';
   right: 0;
-  top: calc( 16px - ( 7px / 2 ));
+  top: calc( 50% + 2px);
   transform: translateY(-50%);
   width: 11px;
   height: 7px;
