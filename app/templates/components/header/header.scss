@@ -16,7 +16,7 @@
   }
 
   &_wrap {
-    padding-top: 200px;
+    padding-top: 250px;
     max-width: 980px;
     margin: 0 auto;
   }
@@ -63,6 +63,24 @@
   }
 
   &_scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 
+    &-help {
+      margin-top: 15px;
+      font-family: 'Futura-Medium';
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      line-height: 18px;
+    }
   }
 }
