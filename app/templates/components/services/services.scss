@@ -17,6 +17,41 @@
     padding-bottom: 60px;
   }
 
+  &_group {
+    position: relative;
+  }
+
+  &_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #D91AA2;
+    box-shadow: 0 2px 4px 0 rgba(217, 26, 162, .40);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #ffffff;
+
+    svg {
+      position: relative;
+      top: -2px;
+    }
+
+    &-left {
+      left: -28px;
+    }
+
+    &-right {
+      right: -28px;
+      // transform: rotate(-180deg);
+    }
+  }
+
   &_item {
     background-color: #3A3F54;
     box-shadow: 0 6px 25px 0 #000000;
