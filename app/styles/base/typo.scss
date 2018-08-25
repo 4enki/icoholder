@@ -101,12 +101,12 @@ code {
   position: relative;
   max-width: 550px;
   text-align: left;
+  font-family: 'Futura-Medium';
 
   &:before {
     position: absolute;
     content: '';
     opacity: .1;
-    font-family: 'Futura-Medium';
     font-size: 156px;
     color: #3A3F54;
     letter-spacing: 0;
@@ -126,7 +126,6 @@ code {
     z-index: 1;
     margin-top: 20px;
     margin-bottom: 0;
-    font-family: '.SFNSDisplay';
     font-size: 22px;
     color: #1C2030;
     letter-spacing: 0;

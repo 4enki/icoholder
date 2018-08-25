@@ -81,10 +81,11 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Futura-Medium';
   }
 
   &_box {
-    padding: 150px 110px;
+    padding: 120px 100px 110px 60px;
     display: flex;
     align-items: stretch;
     align-content: stretch;
@@ -94,10 +95,66 @@
   &_theses {
     flex-basis: 400px;
     min-width: 400px;
-    margin-right: 40px;
+    // margin-right: 40px;
+  }
+
+  &_headline {
+    position: relative;
+    text-align: left;
+    font-family: 'Futura-Medium';
+    margin-bottom: 35px;
+
+    &:before {
+      position: absolute;
+      content: 'trackers';
+      opacity: .32;
+      font-size: 126px;
+      color: #D91AA2;
+      letter-spacing: 0;
+      line-height: 90px;
+      top: -68px;
+      left: -79px;
+      z-index: 0;
+    }
+
+    &-title {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 22px 0;
+      padding: 0;
+      font-size: 28px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    &-info {
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-size: 22px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 35px;
+    }
+  }
+
+  &_body {
+    opacity: 0.9;
+
+    p {
+      font-size: 18px;
+      color: #B2B2B2;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 30px;
+
+      &:last-child { margin-bottom: 0; }
+    }
   }
 
   &_action {
+    margin-top: 60px;
     display: flex;
     align-items: center;
     align-content: center;
