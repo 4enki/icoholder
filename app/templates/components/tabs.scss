@@ -1,0 +1,44 @@
+.tabs {
+  font-family: 'Futura-Medium';
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Futura-Medium';
+  }
+
+  &_item {
+    margin: 0;
+    padding: 0;
+
+    &.active {
+
+      .tabs_link {
+        opacity: 1;
+        border-bottom-color: #ffffff;
+        color: #fff;
+      }
+    }
+  }
+
+  &_link {
+    display: flex;
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 46px;
+    color: #ffffff;
+    letter-spacing: 0;
+    padding: 0 20px;
+    border-bottom-width: 2px;
+
+
+    &:hover {
+      opacity: 1;
+      color: #ffffff;
+    }
+  }
+}
