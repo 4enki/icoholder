@@ -84,11 +84,17 @@
   }
 
   &_box {
-    padding: 100px 50px;
+    padding: 150px 110px;
     display: flex;
     align-items: stretch;
     align-content: stretch;
     color: #ffffff;
+  }
+
+  &_theses {
+    flex-basis: 400px;
+    min-width: 400px;
+    margin-right: 40px;
   }
 
   &_action {
