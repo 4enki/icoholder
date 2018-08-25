@@ -16,4 +16,14 @@
     padding-top: 120px;
     padding-bottom: 60px;
   }
+
+  &_item {
+    background-color: #3A3F54;
+    box-shadow: 0 6px 25px 0 #000000;
+    border-radius: 50px;
+  }
+
+  &_box {
+    padding: 100px 50px;
+  }
 }
