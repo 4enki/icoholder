@@ -85,5 +85,23 @@
 
   &_box {
     padding: 100px 50px;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    color: #ffffff;
+  }
+
+  &_action {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all .3s ease;
+
+    .button { opacity: .60; }
+
+    &:hover .button {
+      opacity: 1;
+    }
   }
 }
