@@ -1,6 +1,6 @@
 .clients {
   background-color: #0C0D12;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 150px;
 
   &_wrap {
@@ -14,6 +14,9 @@
 
   &_list {
     padding-top: 40px;
+    width: 1190px;
+    margin: 0 auto;
+    margin-left: -35px;
   }
 
   &-list {
@@ -25,8 +28,6 @@
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1190px;
-    margin-left: -35px;
   }
 
   &_item {
