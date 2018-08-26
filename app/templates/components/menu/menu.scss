@@ -118,5 +118,10 @@
         background-image: svg-load('arrow-bottom.svg');
       }
     }
+
+    &.is-open {
+      opacity: 1;
+      color: #ffffff;
+    }
   }
 }

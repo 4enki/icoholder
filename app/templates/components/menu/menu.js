@@ -11,5 +11,14 @@ $(document).ready(function() {
     } else {
       topMenu.removeClass('is-scroll');
     }
+
+    return false;
+  });
+
+  $('.menu_link-arrow').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('is-open');
+    $(this).next('.menu-nested').toggleClass('show');
+    return false;
   });
 });
