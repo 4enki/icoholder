@@ -116,5 +116,17 @@
     }
 
     .plans-card_body > p { opacity: 1; }
+
+    .form-checkbox {
+      color: #ffffff;
+
+      .checkbox-custom {
+        border-color: #ffffff;
+
+        &:before {
+          background-color: #fff;
+        }
+      }
+    }
   }
 }

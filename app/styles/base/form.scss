@@ -144,13 +144,14 @@ textarea.form-control {
 .form-checkbox {
   font-family: 'Futura-Medium';
   font-size: 17px;
+  line-height: 17px;
   color: #D91AA2;
   letter-spacing: 0;
   transition: all .25s ease;
 
   .checkbox { display: none; }
 
-  .label { margin-left: 16px; }
+  .checkbox-label { margin-left: 16px; }
 
   .checkbox-custom {
     position: relative;
@@ -174,7 +175,7 @@ textarea.form-control {
   }
 
   .checkbox-custom,
-  .label {
+  .checkbox-label {
     display: inline-block;
     vertical-align: middle;
   }
