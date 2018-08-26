@@ -89,6 +89,8 @@
     <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
+
+    <style>.emerge { opacity: 0; }</style>
   
   </head>
   <body>
@@ -97,7 +99,7 @@
   <div class="px2px"></div>
 -->
 <!-- begin .menu -->
-<nav class="top-menu is-scroll">
+<nav class="top-menu">
   <!-- begin .top-menu_wrap -->
   <div class="top-menu_wrap">
     <!-- begin .top-menu_base -->
@@ -148,7 +150,7 @@
       <!-- end .language -->
       <!-- begin .action -->
       <div class="action">
-        <a href="#contact" class="button button-outline">Let’s Talk</a>
+        <a href="#contact" class="button button-outline _go-to">Let’s Talk</a>
       </div>
       <!-- end .action -->
     </div>
@@ -169,7 +171,7 @@
       <p class="header-description">With the platform for the next generation of technology companies</p>
       <!-- begin .actions-box -->
       <div class="actions-box">
-        <a href="#contact" class="button button-pink">Run Your Sale</a>
+        <a href="#contact" class="button button-pink _go-to">Run Your Sale</a>
       </div>
       <!-- end .actions-box -->
     </div>
@@ -193,10 +195,11 @@
 </header>
 
 
+
     <main>
       
   <!-- begin .platform -->
-<section id="platform" class="platform">
+<section id="platform" class="platform emerge" data-expose="true">
   <!-- begin .platform_wrap -->
   <div class="platform_wrap">
 
@@ -218,12 +221,22 @@
     <!-- begin .row -->
     <div class="row platform-info">
       <!-- begin .col-lg-6 -->
-      <div class="col-lg-6">
+      <div class="col-lg-6 emerge emerge-replay"
+        data-effect="slide"
+        data-expose="true"
+        data-left="-10cm"
+        data-hold="100"
+      >
         <p>Clients trust ICOHolder Agency because we’ve already laid the groundwork for launching Token Sales (ICOs). Because of our culture of forward thinking, and a solid foundation of experience, research, and working on the bleeding edge of culture and technology, we’re the most qualified people to guide you into this new digital territory.</p>
       </div>
       <!-- end .col-lg-6 -->
       <!-- begin .col-lg-6 -->
-      <div class="col-lg-6">
+      <div class="col-lg-6 emerge emerge-replay"
+        data-effect="slide"
+        data-expose="true"
+        data-right="5cm"
+        data-hold="250"
+      >
         <p>Clients trust ICOHolder Agency because we’ve already laid the groundwork for launching Token Sales (ICOs). Because of our culture of forward thinking, and a solid foundation of experience, research, and working on the bleeding edge of culture and technology, we’re the most qualified people to guide you into this new digital territory.</p>
       </div>
       <!-- end .col-lg-6 -->
@@ -1065,6 +1078,7 @@
 
 
     </main>
+
     <footer class="footer">
   <!-- begin .footer_wrap -->
   <div class="footer_wrap">
@@ -1174,6 +1188,7 @@
 <!-- end .floating-controls -->
 
 
-
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>

@@ -1908,6 +1908,11 @@ code {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='11' height='7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4.605 5L10 1.228' stroke='%23FFF' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");
 }
 
+.menu_link.is-open {
+  opacity: 1;
+  color: #ffffff;
+}
+
 .plans {
   padding-top: 200px;
   padding-bottom: 110px;
