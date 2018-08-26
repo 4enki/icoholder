@@ -93,4 +93,26 @@
       margin-top: auto;
     }
   }
+
+  &.is-select {
+    background: #D91AA2;
+    box-shadow: 0 4px 6px 0 rgba(217,26,162,0.50);
+    color: #ffffff;
+
+    .plans-card_name,
+    .plans-card_price,
+    .plans-card_body,
+    .plans-card_body > p,
+    .more-link .button-light-link {
+      color: #ffffff;
+    }
+
+    .more-link {
+      opacity: .6;
+
+      &:hover { opacity: 1; }
+    }
+
+    .plans-card_body > p { opacity: 1; }
+  }
 }
