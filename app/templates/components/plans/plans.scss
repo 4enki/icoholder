@@ -16,12 +16,20 @@
     padding-top: 120px;
     padding-bottom: 60px;
   }
+
+  &-cards {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+  }
 }
 
 .plans-card {
+  flex-basis: 33%;
   border: 2px solid rgba(68, 88, 107, .07);
 
   &_box {
+    height: 100%;
     padding: 25px 50px;
     align-items: stretch;
     align-content: stretch;
@@ -50,6 +58,7 @@
   }
 
   &_body {
+    height: 100%;
     font-size: 15px;
     color: #1C2030;
     letter-spacing: 0;
@@ -58,6 +67,15 @@
     align-content: stretch;
     display: flex;
     flex-direction: column;
+
+    p {
+      opacity: .7;
+      font-size: 15px;
+      color: #1C2030;
+      letter-spacing: 0;
+      text-align: justify;
+      margin-bottom: 0;
+    }
 
     .more-link {
       margin-top: auto;

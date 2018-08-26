@@ -48,7 +48,7 @@ button:disabled,
   border-radius: 0;
   padding: 20px 42px 19px 42px;
   color: rgb(255, 255, 255);
-  font-family: Futura-Medium;
+  font-family: 'Futura-Medium';
   font-size: 16px;
   letter-spacing: 0;
   line-height: 18px;
@@ -118,6 +118,11 @@ button:disabled,
   }
 
   &-light-link {
-
+    font-size: 15px;
+    line-height: 15px;
+    color: #7E7E7E;
+    letter-spacing: 0;
+    font-weight: 200;
+    padding: 0;
   }
 }
