@@ -1,6 +1,6 @@
 .plans {
   padding-top: 200px;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
   background-color: #fff;
 
   &_wrap {
@@ -25,10 +25,12 @@
 }
 
 .plans-card {
-  flex-basis: 33%;
+  flex-basis: 33.33333333%;
+  min-width: 33.33333333%;
   border: 2px solid rgba(68, 88, 107, .07);
   border-right-color: transparent;
   font-family: 'Futura-Medium';
+  margin-bottom: 40px;
 
   &:last-child {
     border-right-color: rgba(68, 88, 107, .07);
