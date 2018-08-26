@@ -27,7 +27,12 @@
 .plans-card {
   flex-basis: 33%;
   border: 2px solid rgba(68, 88, 107, .07);
+  border-right-color: transparent;
   font-family: 'Futura-Medium';
+
+  &:last-child {
+    border-right-color: rgba(68, 88, 107, .07);
+  }
 
   &_box {
     height: 100%;
