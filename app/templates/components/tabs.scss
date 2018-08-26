@@ -9,6 +9,32 @@
     align-items: center;
     align-content: center;
     font-family: 'Futura-Medium';
+
+    &-light {
+
+      .tabs_item.active .tabs_link {
+        color: #D91AA2;
+        border-bottom-color: #D91AA2;
+      }
+
+      .tabs_link {
+        color: #7E7E7E;
+
+        &:hover {
+          color: #D91AA2;
+        }
+      }
+    }
+
+    &-fixed {
+
+      .tabs_link {
+        padding-left: 0;
+        padding-right: 0;
+        width: 130px;
+        min-width: 130px;
+      }
+    }
   }
 
   &_item {

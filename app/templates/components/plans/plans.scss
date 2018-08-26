@@ -11,4 +11,56 @@
   .headline:before {
     content: 'Plans.';
   }
+
+  &_menu {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}
+
+.plans-card {
+  border: 2px solid rgba(68, 88, 107, .07);
+
+  &_box {
+    padding: 25px 50px;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_headline {
+    margin-bottom: 25px;
+  }
+
+  &_name {
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1C2030;
+    letter-spacing: 0;
+  }
+
+  &_price {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    color: #D91AA2;
+    letter-spacing: 0;
+  }
+
+  &_body {
+    font-size: 15px;
+    color: #1C2030;
+    letter-spacing: 0;
+    text-align: justify;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+
+    .more-link {
+      margin-top: auto;
+    }
+  }
 }
