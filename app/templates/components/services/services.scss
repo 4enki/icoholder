@@ -140,7 +140,7 @@
   }
 
   &_body {
-    opacity: 0.9;
+    opacity: .9;
 
     p {
       font-size: 18px;
@@ -161,7 +161,7 @@
     justify-content: center;
     transition: all .3s ease;
 
-    .button { opacity: .60; }
+    .button { opacity: .6; }
 
     &:hover .button {
       opacity: 1;
