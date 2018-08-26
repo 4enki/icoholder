@@ -27,6 +27,7 @@
 .plans-card {
   flex-basis: 33%;
   border: 2px solid rgba(68, 88, 107, .07);
+  font-family: 'Futura-Medium';
 
   &_box {
     height: 100%;
@@ -39,6 +40,7 @@
 
   &_headline {
     margin-bottom: 25px;
+    text-align: center;
   }
 
   &_name {
@@ -47,6 +49,7 @@
     line-height: 24px;
     color: #1C2030;
     letter-spacing: 0;
+    text-align: center;
   }
 
   &_price {
@@ -67,6 +70,7 @@
     align-content: stretch;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     p {
       opacity: .7;
@@ -78,6 +82,7 @@
     }
 
     .more-link {
+      padding-top: 30px;
       margin-top: auto;
     }
   }
