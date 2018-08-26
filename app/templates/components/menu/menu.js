@@ -1,17 +1,18 @@
 $(document).ready(function() {
   var topMenu        = $('.top-menu');
   var topMenuHeight  = topMenu.outerHeight();
-  console.log('topMenuHeight', topMenuHeight);
+
+  // console.log('topMenuHeight', topMenuHeight);
+
   var menuWrap = $('.header-nav');
 
   $(window).scroll(function() {
 
-    if( $(window).scrollTop() > mainHeader ) {
-      menuWrap.css({position: 'fixed'});
-      menuWrap.addClass('is-fixed');
+    if( $(window).scrollTop() > topMenuHeight ) {
+      topMenu.addClass('is-scroll');
+      console.log('scrollTop');
     } else {
-      menuWrap.css({position: 'relative'});
-      menuWrap.removeClass('is-fixed');
+      topMenu.removeClass('is-scroll');
     }
   });
 });
