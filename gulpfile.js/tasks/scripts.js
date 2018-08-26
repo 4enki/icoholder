@@ -20,9 +20,8 @@ gulp.task('scripts', function() {
 // Сборка и минификация (по желанию) скриптов проекта
 gulp.task('scripts:app', function() {
   return gulp.src(config.source.scripts.app)
-    .pipe(rigger())
     .pipe(plumber({ errorHandler: config.errorHandler }))
-    .pipe(changed(config.build.scripts))
+    .pipe(rigger())
     .pipe(eslint.format())
     .pipe(babel())
     // .pipe(uglify())
@@ -33,9 +32,8 @@ gulp.task('scripts:app', function() {
 // Сборка и минификация используемых библиотек
 gulp.task('scripts:vendor', function() {
   return gulp.src(config.source.scripts.vendor)
-    .pipe(rigger())
     .pipe(plumber({ errorHandler: config.errorHandler }))
-    .pipe(changed(config.build.scripts))
+    .pipe(rigger())
     .pipe(eslint.format())
     .pipe(babel())
     .pipe(uglify())
