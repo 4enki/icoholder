@@ -1,17 +1,17 @@
 $(document).ready(function() {
-  var topMenu        = $('.top-menu');
-  var topMenuHeight  = topMenu.outerHeight();
+  var topMenuWrap        = $('.top-menu');
+  var topMenuWrapHeight  = topMenuWrap.outerHeight();
 
-  // console.log('topMenuHeight', topMenuHeight);
+  // console.log('topMenuWrapHeight', topMenuWrapHeight);
 
   var menuWrap = $('.header-nav');
 
   $(window).scroll(function() {
 
-    if( $(window).scrollTop() > topMenuHeight ) {
-      topMenu.addClass('is-scroll');
+    if( $(window).scrollTop() > topMenuWrapHeight ) {
+      topMenuWrap.addClass('is-scroll');
     } else {
-      topMenu.removeClass('is-scroll');
+      topMenuWrap.removeClass('is-scroll');
     }
 
     return false;
