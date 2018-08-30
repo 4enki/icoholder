@@ -17,8 +17,10 @@ $(document).ready(function() {
 
   $('.menu_link-arrow').click(function (e) {
     e.preventDefault();
+
     $(this).toggleClass('is-open');
     $(this).next('.menu-nested').toggleClass('show');
+
     return false;
   });
 });
