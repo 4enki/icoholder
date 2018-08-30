@@ -2,6 +2,8 @@ $(document).ready(function() {
   var topMenu        = $('.top-menu');
   var topMenuHeight  = topMenu.outerHeight();
 
+  // console.log('topMenuHeight', topMenuHeight);
+
   var menuWrap = $('.header-nav');
 
   $(window).scroll(function() {

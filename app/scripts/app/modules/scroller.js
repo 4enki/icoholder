@@ -1,8 +1,10 @@
 $(document).ready(function () {
-  var scrollerStart = false;
+  var scrollerStart  = false;
+  var header        = $('.header');
+  var headerHeight  = header.outerHeight();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
+    if ( $(this).scrollTop() > headerHeight ) {
       $('#scroller').fadeIn();
     } else {
       $('#scroller').fadeOut();
@@ -11,7 +13,7 @@ $(document).ready(function () {
 
   $('#scroller').click(function () {
     scrollerStart = true;
-    $('body,html').animate({scrollTop: 0}, 400, function () {
+    $('body,html').animate({scrollTop: 0}, 700, function () {
       scrollerStart = false;
     });
     return false;
