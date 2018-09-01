@@ -24,8 +24,13 @@
   }
 
   &_menu {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    @media #{$lg} {
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
   }
 
   &_group {

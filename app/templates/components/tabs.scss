@@ -9,6 +9,11 @@
     align-items: center;
     align-content: center;
     font-family: 'Futura-Medium';
+    flex-wrap: wrap;
+
+    @media #{$lg} {
+      flex-wrap: nowrap;
+    }
 
     &-light {
 
@@ -30,7 +35,7 @@
 
       .tabs_link {
         padding-left: 0;
-        padding-right: 20px;
+        padding-right: 30px;
 
         @media #{$lg} {
           padding-right: 0;
