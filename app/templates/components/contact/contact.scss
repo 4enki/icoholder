@@ -33,6 +33,13 @@
     align-items: stretch;
     align-content: stretch;
     margin-bottom: 40px;
+    flex-direction: column;
+
+    @media #{$lg} {
+      flex-direction: row;
+      align-items: stretch;
+      align-content: stretch;
+    }
   }
 
   &_col {
@@ -41,14 +48,20 @@
     align-content: stretch;
     flex-direction: column;
 
-    &:first-child {
-      min-width: 430px;
-      margin-right: 90px;
-    }
+    @media #{$lg} {
+      &:first-child {
+        min-width: 430px;
+        margin-right: 90px;
+      }
 
-    &:last-child {
-      height: 100%;
-      min-width: 600px;
+      &:last-child {
+        height: 100%;
+        min-width: 600px;
+      }
     }
+  }
+
+  .form-actions {
+    width: 100%;
   }
 }
