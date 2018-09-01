@@ -77,7 +77,7 @@
     margin: 0 0 50px 0;
     text-align: left;
 
-    span { display: block; }
+    .teaser { display: block; }
 
     @media #{$lg} {
       font-size: 80px;
