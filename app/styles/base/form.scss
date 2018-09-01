@@ -40,6 +40,28 @@ textarea {
   &:last-child {
     margin-bottom: 0;
   }
+
+  &.is-error {
+
+  }
+}
+
+.form-label {
+  position: absolute;
+  font-size: 14px;
+  color: #1C2030;
+  letter-spacing: 0;
+  line-height: 18px;
+  top: -10px;
+  transition: all .3s ease;
+
+  opacity: 0;
+  visibility: hidden;
+
+  &.show {
+    opacity: .25;
+    visibility: visible;
+  }
 }
 
 .form-actions {

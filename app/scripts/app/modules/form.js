@@ -1,6 +1,12 @@
-$(document).ready(function(){
-  $('input[type="text"]').click(function() {
-    var sd = $(this).attr('placeholder');
-    $('label[for^="'+sd+'"]').fadeIn();
+$(document).ready(function() {
+
+
+  $('.form-control').keyup(function() {
+    if ( $(this).val().length !== 0 ) {
+      $(this).prev('.form-label').addClass('show');
+    } else {
+      $(this).prev('.form-label').removeClass('show');
+    }
   });
+
 });
