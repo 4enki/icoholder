@@ -24,10 +24,16 @@
   }
 
   &_list {
-    padding-top: 40px;
-    width: 1190px;
     margin: 0 auto;
-    margin-left: -35px;
+    margin-left: 0;
+    width: 100%;
+    padding-top: 20px;
+
+    @media #{$lg} {
+      padding-top: 40px;
+      width: 1190px;
+      margin-left: -35px;
+    }
   }
 
   &-list {
