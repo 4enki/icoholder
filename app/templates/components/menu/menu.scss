@@ -1,5 +1,5 @@
 .top-menu {
-  padding-top: 65px;
+  padding-top: 5px;
   padding-bottom: 5px;
   position: fixed;
   top: 0;
@@ -8,11 +8,21 @@
   width: 100%;
   z-index: 5;
   transition: all .3s ease;
+  background-color: rgba(12, 13, 18, .45);
+
+  @media #{$lg} {
+    padding-top: 65px;
+    padding-bottom: 5px;
+    background-color: transparent;
+
+    &.is-scroll {
+      z-index: 100;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
 
   &.is-scroll {
-    z-index: 100;
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color: rgba(12, 13, 18, .85);
   }
 
@@ -24,9 +34,15 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    padding: 0 15px;
 
     @media #{$lg} {
+      padding: 0;
       max-width: 1120px;
+    }
+
+    .menu {
+      display: none;
     }
   }
 
@@ -34,6 +50,29 @@
     display: flex;
     align-items: center;
     align-content: center;
+  }
+
+  .logo svg {
+    width: 135px;
+    height: auto;
+  }
+
+  @media #{$lg} {
+
+    .logo svg {
+      width: auto;
+    }
+  }
+
+  .action {
+
+    .button {
+      padding: 14px 38px 14px 38px;
+    }
+
+    @media #{$lg} {
+      padding: 20px 42px 19px 42px;
+    }
   }
 }
 
