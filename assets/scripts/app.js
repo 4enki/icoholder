@@ -1,9 +1,14 @@
 'use strict';
 
 $(document).ready(function () {
-  $('input[type="text"]').click(function () {
-    var sd = $(this).attr('placeholder');
-    $('label[for^="' + sd + '"]').fadeIn();
+
+  $('.form-control').keyup(function () {
+
+    if ($(this).val().length !== 0) {
+      $(this).prev('.form-label').addClass('show');
+    } else {
+      $(this).prev('.form-label').removeClass('show');
+    }
   });
 });
 $(document).ready(function () {
@@ -12,7 +17,7 @@ $(document).ready(function () {
   var headerHeight = header.outerHeight();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > headerHeight) {
+    if ($(this).scrollTop() > headerHeight * 2) {
       $('#scroller').fadeIn();
     } else {
       $('#scroller').fadeOut();
@@ -35,20 +40,34 @@ $('._go-to').on('click', function (e) {
   $('body,html').animate({ scrollTop: top }, 1500);
 });
 // /помогаем ссылкам с якорями плавно скролиться
+// = modules/spyscrollmenu
+$(function () {
+  var typed = new Typed("._text-mutation", {
+    strings: ["ICO campaign", "bounty campaign", "telegram support", "advisors team"],
+    typeSpeed: 150, // Скорость печати текста
+    startDelay: 1000, // Задержка перед началом печати текста
+    shuffle: true,
+    backSpeed: 150, // Скорость стирания текста
+    backDelay: 1500, // Задержка перед стиранием текста
+    loop: true, // Зациклить
+    showCursor: true, // Показать курсор
+    cursorChar: "." // Символ курсора
+  });
+});
 $(document).ready(function () {
-  var topMenu = $('.top-menu');
-  var topMenuHeight = topMenu.outerHeight();
+  var topMenuWrap = $('.top-menu');
+  var topMenuWrapHeight = topMenuWrap.outerHeight();
 
-  // console.log('topMenuHeight', topMenuHeight);
+  // console.log('topMenuWrapHeight', topMenuWrapHeight);
 
   var menuWrap = $('.header-nav');
 
   $(window).scroll(function () {
 
-    if ($(window).scrollTop() > topMenuHeight) {
-      topMenu.addClass('is-scroll');
+    if ($(window).scrollTop() > topMenuWrapHeight) {
+      topMenuWrap.addClass('is-scroll');
     } else {
-      topMenu.removeClass('is-scroll');
+      topMenuWrap.removeClass('is-scroll');
     }
 
     return false;
