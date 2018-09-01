@@ -1,14 +1,23 @@
 .footer {
-  padding: 60px 90px 40px 90px;
+  padding: 20px 0;
   background-color: #11111B;
   color: rgba(255, 255, 255, .3);
   position: relative;
+  overflow: hidden;
+
+  @media #{$lg} {
+    padding: 60px 90px 40px 90px;
+  }
 
   &_wrap {
-    max-width: 1180px;
+    max-width: 100%;
     margin: 0 auto;
-    z-index: 1;
-    position: relative;
+    padding: 0 20px;
+
+    @media #{$lg} {
+      max-width: 1180px;
+      padding: 0;
+    }
   }
 
   &_bg,
@@ -46,15 +55,23 @@
   align-items: flex-start;
   align-content: flex-start;
   width: 100%;
+  flex-direction: column;
+
+  @media #{$lg} {
+    flex-direction: row;
+  }
 
   &_about {
-    font-family: PTSans-Caption;
+    font-family: 'PTSans-Caption';
     font-size: 12px;
     letter-spacing: 0;
     line-height: 16px;
-    margin-right: 70px;
-    flex-basis: 300px;
-    min-width: 300px;
+
+    @media #{$lg} {
+      margin-right: 70px;
+      flex-basis: 300px;
+      min-width: 300px;
+    }
   }
 
   &_menu {
@@ -63,6 +80,13 @@
     align-items: flex-start;
     align-content: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media #{$lg} {
+      flex-wrap: nowrap;
+    }
+
+
   }
 }
 
@@ -107,6 +131,20 @@
       color: rgba(255, 255, 255, 1);
     }
   }
+
+  &_box {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+
+    &:last-child { margin-bottom: 0; }
+
+    @media #{$lg} {
+      font-weight: 100%;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .footer-copyright {
@@ -114,7 +152,17 @@
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 50px;
+  flex-direction: column;
+  padding-bottom: 140px;
+  position: relative;
+  z-index: 2;
+
+  @media #{$lg} {
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
 }
 
 .floating-controls {
@@ -186,7 +234,6 @@
   }
 
   &_link {
-    opacity: .65;
     overflow: hidden;
     text-indent: -9999px;
     position: relative;
@@ -202,9 +249,13 @@
     background-color: #ffffff;
     border-bottom: 0;
 
-    &:hover { opacity: 1; }
+    @media #{$lg} {
+      opacity: .65;
 
-    span { transition: all .2s ease; }
+      &:hover { opacity: 1; }
+
+      span { transition: all .2s ease; }
+    }
 
     &--facebook {
       background-color: #ffffff;
