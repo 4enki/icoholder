@@ -2,8 +2,10 @@
   background-color: #0C0D12;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: hidden;
 
   @media #{$lg} {
+    overflow: auto;
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -101,17 +103,28 @@
   }
 
   &_box {
-    padding: 120px 100px 110px 60px;
+    padding: 40px 40px;
     display: flex;
     align-items: stretch;
     align-content: stretch;
     color: #ffffff;
+    flex-direction: column;
+
+    @media #{$lg} {
+      flex-direction: row;
+      padding: 120px 100px 110px 60px;
+    }
   }
 
   &_theses {
-    flex-basis: 400px;
-    min-width: 400px;
+    flex-basis: 100%;
+    min-width: 100%;
     // margin-right: 40px;
+
+    @media #{$lg} {
+      flex-basis: 400px;
+      min-width: 400px;
+    }
   }
 
   &_headline {
@@ -170,17 +183,21 @@
   }
 
   &_action {
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     transition: all .3s ease;
 
-    .button { opacity: .6; }
+    @media #{$lg} {
+      margin-top: 60px;
 
-    &:hover .button {
-      opacity: 1;
+      .button { opacity: .6; }
+
+      &:hover .button {
+        opacity: 1;
+      }
     }
   }
 }
