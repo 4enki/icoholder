@@ -1,7 +1,12 @@
 .plans {
-  padding-top: 200px;
-  padding-bottom: 110px;
   background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media #{$lg} {
+    padding-top: 200px;
+    padding-bottom: 110px;
+  }
 
   &_wrap {
     max-width: 100%;
