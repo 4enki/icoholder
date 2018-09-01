@@ -6,8 +6,14 @@
   font-family: 'Futura-Medium';
 
   &_wrap {
-    max-width: 1120px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+
+    @media #{$lg} {
+      max-width: 1120px;
+      padding: 0;
+    }
   }
 
   &-list {

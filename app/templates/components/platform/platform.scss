@@ -1,14 +1,20 @@
 .platform {
-  padding-top: 200px;
-  padding-bottom: 100px;
   background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media #{$lg} {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
 
   &_wrap {
-    max-width: 1120px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 
     @media #{$lg} {
+      max-width: 1120px;
       padding: 0;
     }
   }
@@ -35,7 +41,11 @@
       text-align: justify;
       line-height: 30px;
 
-      &:last-child { margin-bottom: 0; }
+      @media #{$lg} {
+        margin-bottom: 0;
+
+        &:last-child { margin-bottom: 0; }
+      }
     }
   }
 
