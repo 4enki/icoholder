@@ -41,8 +41,31 @@ textarea {
     margin-bottom: 0;
   }
 
-  &.is-error {
+  &.is-invalid {
 
+    .form-control {
+      border-bottom-color: #dc3545;
+
+      &::placeholder { color: #dc3545; }
+    }
+
+    .form-label {
+      color: #dc3545;
+      opacity: .7;
+    }
+  }
+
+  &.is-valid {
+
+    .form-control {
+      border-bottom-color: #28a745;
+
+      &::placeholder { color: #28a745; }
+    }
+
+    .form-label {
+      color: #28a745;
+    }
   }
 }
 
