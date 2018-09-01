@@ -4,7 +4,7 @@ $(document).ready(function () {
   var headerHeight  = header.outerHeight();
 
   $(window).scroll(function () {
-    if ( $(this).scrollTop() > headerHeight ) {
+    if ( $(this).scrollTop() > headerHeight * 2 ) {
       $('#scroller').fadeIn();
     } else {
       $('#scroller').fadeOut();
