@@ -20,6 +20,7 @@
     border-radius: 0 0 100% 100%;
 
     @media #{$lg} {
+      padding: 0;
       min-height: 880px;
       max-height: 1020px;
     }
