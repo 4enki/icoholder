@@ -66,7 +66,7 @@
     svg { position: relative; }
 
     &-left {
-      left: -28px;
+      left: -14px;
 
       svg { top: 2px; }
 
@@ -74,16 +74,24 @@
         color: #D91AA2;
         border-color: darken(#D91AA2, 20%);
       }
+
+      @media #{$lg} {
+        left: -28px;
+      }
     }
 
     &-right {
-      right: -28px;
+      right: -14px;
 
       svg { top: -2px; }
 
       &:hover {
         color: #D91AA2;
         border-color: darken(#D91AA2, 20%);
+      }
+
+      @media #{$lg} {
+        right: -28px;
       }
     }
   }
@@ -103,7 +111,7 @@
   }
 
   &_box {
-    padding: 40px 40px;
+    padding: 45px 40px;
     display: flex;
     align-items: stretch;
     align-content: stretch;
@@ -131,7 +139,13 @@
     position: relative;
     text-align: left;
     font-family: 'Futura-Medium';
-    margin-bottom: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @media #{$lg} {
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
 
     &:before {
       position: absolute;
@@ -149,22 +163,30 @@
     &-title {
       position: relative;
       z-index: 1;
-      margin: 0 0 22px 0;
+      margin: 0 0 10px 0;
       padding: 0;
       font-size: 28px;
       color: #FFFFFF;
       letter-spacing: 0;
+
+      @media #{$lg} {
+        margin: 0 0 22px 0;
+      }
     }
 
     &-info {
       position: relative;
       z-index: 1;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 0;
       font-size: 22px;
       color: #FFFFFF;
       letter-spacing: 0;
       line-height: 35px;
+
+      @media #{$lg} {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -183,7 +205,7 @@
   }
 
   &_action {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     align-content: center;

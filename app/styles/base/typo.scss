@@ -181,7 +181,7 @@ code {
     color: #FFFFFF;
     letter-spacing: 0;
     text-shadow: 0 2px 4px rgba(255, 255, 255, .4);
-    margin-bottom: 35px;
+    margin-bottom: 5px;
     position: relative;
 
     &:last-child { margin-bottom: 0; }
@@ -196,9 +196,9 @@ code {
       width: 7px;
       height: 7px;
     }
-  }
 
-  @media #{$lg} {
-
+    @media #{$lg} {
+      margin-bottom: 35px;
+    }
   }
 }
