@@ -1,6 +1,6 @@
-<!-- в случае тестирования разбейте стекло комментариев
+{# <!-- в случае тестирования разбейте стекло комментариев
   <div class="px2px"></div>
--->
+--> #}
 {% include "components/menu/menu.html" %}
 
 <header class="header">
@@ -9,15 +9,33 @@
     <!-- begin .header-cover --><div class="header-cover emerge" data-spin="true" style="background-image: url('assets/images/main-bg.png');"></div><!-- end .header-cover -->
     <!-- begin .header_wrap -->
     <div class="header_wrap">
-      <h1><span class="text-pink">Successful</span> ICO campaign.</h1>
-      <p class="header-description">With the platform for the next generation of technology companies</p>
+      <div
+        class="emerge"
+        data-effect="relax"
+        data-origin="bottom"
+        data-hold="109"
+      >
+        <h1><span class="text-pink">Successful</span> ICO campaign.</h1>
+        <p class="header-description">With the platform for the next generation of technology companies</p>
+      </div>
+
       <!-- begin .actions-box -->
-      <div class="actions-box">
+      <div
+        class="actions-box emerge"
+        data-effect="slide"
+        data-right="20cm"
+        data-hold="187"
+      >
         <a href="#contact" class="button button-pink _go-to">Run Your Sale</a>
       </div>
       <!-- end .actions-box -->
     </div>
     <!-- end .header_wrap -->
+    <div
+      class="emerge"
+      data-effect="screw"
+      data-hold="392"
+    >
     <!-- begin .header_scroll -->
     <div class="header_scroll">
       <!-- begin .scroll-mouse -->
@@ -32,6 +50,7 @@
       <!-- end .scroll-help -->
     </div>
     <!-- end .header_scroll -->
+    </div>
   </div>
   <!-- end .header_circle -->
 </header>
