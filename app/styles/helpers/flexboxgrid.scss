@@ -23,8 +23,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -40px;
-  margin-left: -40px;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 }
 
 .row.reverse {
@@ -729,6 +729,11 @@
 }
 
 @media #{$lg} {
+  .row {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+
   .container {
     width: 76rem;
   }

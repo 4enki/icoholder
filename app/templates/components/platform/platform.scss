@@ -6,6 +6,11 @@
   &_wrap {
     max-width: 1120px;
     margin: 0 auto;
+    padding: 0 20px;
+
+    @media #{$lg} {
+      padding: 0;
+    }
   }
 
   .headline:before {
@@ -35,7 +40,11 @@
   }
 
   &-inmedia {
-    padding-top: 80px;
+    padding-top: 20px;
+
+    @media #{$lg} {
+      padding-top: 80px;
+    }
   }
 }
 
@@ -44,9 +53,27 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media #{$lg} {
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &_item {
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    @media #{$lg} {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
 
   &_link {
     border-bottom: 0;

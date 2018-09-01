@@ -17,12 +17,17 @@
   }
 
   &_wrap {
-    max-width: 1120px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
+
+    @media #{$lg} {
+      max-width: 1120px;
+    }
   }
 
   &_aside {
@@ -32,13 +37,9 @@
   }
 }
 
-.logo-link {
-  border-bottom: 0;
-}
+.logo-link { border-bottom: 0; }
 
-.language {
-  margin-right: 50px;
-}
+.language { margin-right: 50px; }
 
 .menu {
   list-style-type: none;
