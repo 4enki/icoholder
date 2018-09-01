@@ -48,20 +48,27 @@
   }
 
   &_item {
-    transform: rotate(45deg);
-    width: 120px;
-    min-width: 120px;
-    height: 120px;
     display: flex;
-    margin: -20px 24px;
     align-items: center;
     align-content: center;
     justify-content: center;
+    margin: 0 20px 40px 0;
+
+    @media #{$lg} {
+      transform: rotate(45deg);
+      width: 120px;
+      min-width: 120px;
+      height: 120px;
+      margin: -20px 24px;
+    }
   }
 
   &_link {
-    transform: rotate(-45deg);
     border-bottom: 0;
+
+    @media #{$lg} {
+      transform: rotate(-45deg);
+    }
 
     img {
       vertical-align: bottom;
