@@ -52,8 +52,7 @@
 
 .typed-cursor {
   opacity: 1;
-  font-weight: 100;
-  animation: blink 0.7s infinite;
+  animation: blink .7s infinite;
 }
 
 @keyframes blink {
@@ -773,6 +772,37 @@ textarea {
 .form-group:last-child,
 .form-actions:last-child {
   margin-bottom: 0;
+}
+
+.form-group.is-invalid .form-control,
+.form-actions.is-invalid .form-control {
+  border-bottom-color: #dc3545;
+}
+
+.form-group.is-invalid .form-control::placeholder,
+.form-actions.is-invalid .form-control::placeholder {
+  color: #dc3545;
+}
+
+.form-group.is-invalid .form-label,
+.form-actions.is-invalid .form-label {
+  color: #dc3545;
+  opacity: .7;
+}
+
+.form-group.is-valid .form-control,
+.form-actions.is-valid .form-control {
+  border-bottom-color: #28a745;
+}
+
+.form-group.is-valid .form-control::placeholder,
+.form-actions.is-valid .form-control::placeholder {
+  color: #28a745;
+}
+
+.form-group.is-valid .form-label,
+.form-actions.is-valid .form-label {
+  color: #28a745;
 }
 
 .form-label {
