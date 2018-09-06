@@ -8,6 +8,5 @@
 
 @import "../templates/components/**/*.scss"; // Модули и блоки
 
-@import "./libs/magnific-popup.scss";
-@import "../../resources/assets/scripts/owlcarouselowl.carousel.min.scss";
-@import "../../resources/assets/scripts/owlcarouselowl.theme.default.min.scss";
+@import "./lib/owlcarousel/owl.carousel.min.scss";
+@import "./lib/owlcarousel/owl.theme.default.min.scss";
