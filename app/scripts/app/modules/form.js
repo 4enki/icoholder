@@ -17,7 +17,6 @@ $(document).ready(function() {
     e.preventDefault();
     let form           = $(this);
     let formInput      = form.find('.form-control');
-    let formInputEmail = form.find('.form-control[name="feedback"]');
     let formOkMessage  = form.find('._form-actions-status');
 
     function clear_form() {
@@ -30,7 +29,13 @@ $(document).ready(function() {
     let messenger = form.find('input[name="messenger"]').val();
     let message   = form.find('textarea[name="message"]').val();
 
-    if(formInput.val().length > 0) {
+    if (formInput.val().length > 0) {
+
+      console.log(formInput);
+
+      formInput.closest('.form-group').removeClass('is-invalid');
+      formInput.closest('.form-group').addClass('is-valid');
+
       $.ajax({
         type: "POST",
         data: {
@@ -50,11 +55,29 @@ $(document).ready(function() {
         error: function() {
           console.log('form ._contact-form status: error');
 
-          formInput.closest('.form-group').addClass('is-invalid');
         }
       });
     } else {
-      formInput.closest('.form-group').addClass('is-invalid');
+
+      console.log(formInput.val().length);
+
+      formInput.each(function() {
+
+        if ($(this).val().length > 0) {
+
+          $(this).closest('.form-group').removeClass('is-invalid');
+          $(this).closest('.form-group').addClass('is-valid');
+
+        } else {
+
+
+          $(this).closest('.form-group').removeClass('is-valid');
+          $(this).closest('.form-group').addClass('is-invalid');
+
+        }
+
+      });
+
     }
 
     return false;
