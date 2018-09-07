@@ -4,3 +4,4 @@
 //= modules/slider
 //= modules/header
 //= modules/menu
+//= modules/plans
