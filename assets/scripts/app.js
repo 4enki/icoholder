@@ -10,6 +10,64 @@ $(document).ready(function () {
       $(this).prev('.form-label').removeClass('show');
     }
   });
+
+  $('._contact-form').submit(function (e) {
+    console.log('submit form ._contact-form');
+
+    e.preventDefault();
+    var form = $(this);
+    var formInput = form.find('.form-control');
+    var formOkMessage = form.find('._form-actions-status');
+
+    function clear_form() {
+      formInput.val('');
+    }
+
+    var name = form.find('input[name="name"]').val();
+    var email = form.find('input[name="email"]').val();
+    var phone = form.find('input[name="phone"]').val();
+    var messenger = form.find('input[name="messenger"]').val();
+    var message = form.find('textarea[name="message"]').val();
+
+    if (formInput.val().length > 0) {
+
+      $.ajax({
+        type: "POST",
+        data: {
+          'name': name,
+          'email': email,
+          'phone': phone,
+          'messenger': messenger,
+          'message': message
+        },
+        success: function success() {
+          console.log('form ._contact-form status: success');
+
+          clear_form();
+          formInput.closest('.form-group').removeClass('is-invalid');
+          formOkMessage.addClass('is-show');
+        },
+        error: function error() {
+          console.log('form ._contact-form status: error');
+        }
+      });
+    } else {
+
+      formInput.each(function () {
+
+        if ($(this).val().length > 0) {
+
+          $(this).closest('.form-group').removeClass('is-invalid ui-shake');
+          $(this).closest('.form-group').addClass('is-valid');
+        } else {
+          $(this).closest('.form-group').removeClass('is-valid');
+          $(this).closest('.form-group').addClass('is-invalid ui-shake');
+        }
+      });
+    }
+
+    return false;
+  });
 });
 $(document).ready(function () {
   var scrollerStart = false;
@@ -40,16 +98,38 @@ $('._go-to').on('click', function (e) {
   $('body,html').animate({ scrollTop: top }, 1500);
 });
 // /помогаем ссылкам с якорями плавно скролиться
-// = modules/spyscrollmenu
+$(document).ready(function () {
+
+  var owl = $('.services_list');
+
+  owl.owlCarousel({
+    items: 1,
+    center: true,
+    loop: true,
+    nav: false,
+    autoplayTimeout: 1000,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: '#Trackers',
+    dotsContainer: '#services_menu'
+  });
+
+  $(".services_nav-left").click(function () {
+    owl.trigger('prev.owl.carousel');
+  });
+  $(".services_nav-right").click(function () {
+    owl.trigger('next.owl.carousel');
+  });
+});
 $(function () {
 
   var typed = new Typed('._text-mutation', {
     strings: ['ICO campaign', 'bounty campaign', 'telegram support', 'advisors team'],
-    typeSpeed: 242,
-    startDelay: 3605,
-    backSpeed: 175,
-    backDelay: 3605,
-    loop: false,
+    typeSpeed: 183,
+    startDelay: 185,
+    backSpeed: 142,
+    backDelay: 1297,
+    loop: true,
     loopCount: false,
     showCursor: true,
     cursorChar: "."
@@ -81,5 +161,12 @@ $(document).ready(function () {
     $(this).next('.menu-nested').toggleClass('show');
 
     return false;
+  });
+});
+$(document).ready(function () {
+
+  $('#plans').easytabs({
+    tabActiveClass: 'active',
+    tabs: '> .plans_menu > ul > li'
   });
 });
