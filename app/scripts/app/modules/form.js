@@ -11,7 +11,6 @@ $(document).ready(function() {
   });
 
   $('._contact-form').submit(function(e) {
-
     console.log('submit form ._contact-form');
 
     e.preventDefault();
@@ -34,11 +33,11 @@ $(document).ready(function() {
       $.ajax({
         type: "POST",
         data: {
-          'name': name,
-          'email': email,
-          'phone': phone,
+          'name':      name,
+          'email':     email,
+          'phone':     phone,
           'messenger': messenger,
-          'message': message
+          'message':   message
         },
         success: function() {
           console.log('form ._contact-form status: success');
@@ -60,14 +59,9 @@ $(document).ready(function() {
 
           $(this).closest('.form-group').removeClass('is-invalid ui-shake');
           $(this).closest('.form-group').addClass('is-valid');
-
-          formOkMessage.addClass('is-show');
-
         } else {
-
           $(this).closest('.form-group').removeClass('is-valid');
           $(this).closest('.form-group').addClass('is-invalid ui-shake');
-
         }
 
       });
