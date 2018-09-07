@@ -1,10 +1,9 @@
 $(document).ready(function(){
 
-  var owl = $('.services_list');
+  let owl = $('.services_list');
 
   owl.owlCarousel({
     items: 1,
-    startPosition: 0,
     nav: false,
     loop: true,
     URLhashListener: true,

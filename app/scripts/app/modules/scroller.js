@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  var scrollerStart  = false;
-  var header        = $('.header');
-  var headerHeight  = header.outerHeight();
+  let scrollerStart  = false;
+  let header        = $('.header');
+  let headerHeight  = header.outerHeight();
 
   $(window).scroll(function () {
     if ( $(this).scrollTop() > headerHeight * 2 ) {
