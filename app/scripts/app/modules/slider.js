@@ -4,10 +4,14 @@ $(document).ready(function(){
 
   owl.owlCarousel({
     items: 1,
-    nav: false,
+    center: true,
     loop: true,
+    nav: false,
+    autoplayTimeout: 1000,
     URLhashListener: true,
-    startPosition: 'URLHash'
+    autoplayHoverPause: true,
+    startPosition: '#Trackers',
+    dotsContainer: '#services_menu'
   });
 
   $(".services_nav-left").click(function(){
