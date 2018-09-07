@@ -1,11 +1,11 @@
 $(function() {
 
-  var typed = new Typed('._text-mutation', {
+  let typed = new Typed('._text-mutation', {
     strings:    ['ICO campaign', 'bounty campaign', 'telegram support', 'advisors team'],
     typeSpeed:  183,
-    startDelay: 2965,
+    startDelay: 185,
     backSpeed:  142,
-    backDelay:  2975,
+    backDelay:  1297,
     loop:       true,
     loopCount:  false,
     showCursor: true,
