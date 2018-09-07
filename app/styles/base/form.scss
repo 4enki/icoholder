@@ -94,11 +94,25 @@ textarea {
   }
 
   &-status {
+    opacity: 0;
+    font-family: 'Futura-Medium';
+    font-size: 16px;
+    line-height: 16px;
 
+    &.show {
+      opacity: 1;
+    }
   }
 
   @media #{$lg} {
+    align-items: center;
+    align-content: center;
     justify-content: flex-end;
+
+    &-status {
+      margin-right: 40px;
+      opacity: 1;
+    }
 
     .button {
       width: auto;
