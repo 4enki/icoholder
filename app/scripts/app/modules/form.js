@@ -31,11 +31,6 @@ $(document).ready(function() {
 
     if (formInput.val().length > 0) {
 
-      console.log(formInput);
-
-      formInput.closest('.form-group').removeClass('is-invalid');
-      formInput.closest('.form-group').addClass('is-valid');
-
       $.ajax({
         type: "POST",
         data: {
@@ -50,7 +45,7 @@ $(document).ready(function() {
 
           clear_form();
           formInput.closest('.form-group').removeClass('is-invalid');
-          formOkMessage.addClass('show');
+          formOkMessage.addClass('is-show');
         },
         error: function() {
           console.log('form ._contact-form status: error');
@@ -63,13 +58,15 @@ $(document).ready(function() {
 
         if ($(this).val().length > 0) {
 
-          $(this).closest('.form-group').removeClass('is-invalid');
+          $(this).closest('.form-group').removeClass('is-invalid ui-shake');
           $(this).closest('.form-group').addClass('is-valid');
+
+          formOkMessage.addClass('is-show');
 
         } else {
 
           $(this).closest('.form-group').removeClass('is-valid');
-          $(this).closest('.form-group').addClass('is-invalid');
+          $(this).closest('.form-group').addClass('is-invalid ui-shake');
 
         }
 

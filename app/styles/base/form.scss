@@ -98,8 +98,9 @@ textarea {
     font-family: 'Futura-Medium';
     font-size: 16px;
     line-height: 16px;
+    transition: .25s ease;
 
-    &.show {
+    &.is-show {
       opacity: 1;
     }
   }
@@ -111,7 +112,6 @@ textarea {
 
     &-status {
       margin-right: 40px;
-      opacity: 1;
     }
 
     .button {
