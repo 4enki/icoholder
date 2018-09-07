@@ -22,33 +22,58 @@
     </div>
     <!-- end .headline -->
     <!-- begin .contact-form -->
-    <div class="contact-form">
+    <form class="contact-form _contact-form">
       <!-- begin .contact-form_wrap -->
       <div class="contact-form_wrap">
         <!-- begin .contact-form_col -->
         <div class="contact-form_col">
           <!-- begin .form-group -->
           <div class="form-group">
-            <label for="" class="form-label">Your Name</label>
-            <input type="text" class="form-control" placeholder="Your Name">
+            <label for="name" class="form-label">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Your Name"
+            >
           </div>
           <!-- end .form-group -->
           <!-- begin .form-group -->
           <div class="form-group">
-            <label for="" class="form-label show">Email addres</label>
-            <input type="email" class="form-control" placeholder="Email addres" value="Dornie.hoffman@gmail.com ">
+            <label for="email" class="form-label show">Email addres</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email addres"
+              value="Dornie.hoffman@gmail.com"
+            >
           </div>
           <!-- end .form-group -->
           <!-- begin .form-group -->
           <div class="form-group is-invalid">
-            <label for="" class="form-label">Phone</label>
-            <input type="tel" class="form-control" placeholder="Phone">
+            <label for="phone" class="form-label">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="form-control"
+              placeholder="Phone"
+            >
           </div>
           <!-- end .form-group -->
           <!-- begin .form-group -->
           <div class="form-group">
-            <label for="" class="form-label">Telegram / Skype</label>
-            <input type="text" class="form-control" placeholder="Telegram / Skype">
+            <label for="messenger" class="form-label">Telegram / Skype</label>
+            <input
+              type="text"
+              name="messenger"
+              id="messenger"
+              class="form-control"
+              placeholder="Telegram / Skype"
+            >
           </div>
           <!-- end .form-group -->
         </div>
@@ -85,8 +110,15 @@
           <!-- end .form-group -->
           <!-- begin .form-group -->
           <div class="form-group">
-            <label for="" class="form-label">Your message</label>
-            <textarea name="name" rows="8" cols="80" class="form-control contact-form-message" placeholder="Your message"></textarea>
+            <label for="message" class="form-label">Your message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="8"
+              cols="80"
+              class="form-control contact-form-message"
+              placeholder="Your message"
+            ></textarea>
           </div>
           <!-- end .form-group -->
         </div>
@@ -95,10 +127,15 @@
       <!-- end .contact-form_wrap -->
       <!-- begin .form-actions -->
       <div class="form-actions">
+        <!-- begin .form-actions-status -->
+        <div class="form-actions-status">
+          <span>you request has been sent...</span>
+        </div>
+        <!-- end .form-actions-status -->
         <button class="button button-green">Send Message</button>
       </div>
       <!-- end .form-actions -->
-    </div>
+    </form>
     <!-- end .contact-form -->
   </div>
   <!-- end .contact_wrap -->

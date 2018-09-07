@@ -10,4 +10,47 @@ $(document).ready(function() {
 
   });
 
+  $('._contact-form').submit(function(e) {
+
+    console.log('submit form ._contact-form');
+
+    e.preventDefault();
+    let form           = $(this);
+    let formInput      = form.find('.form-control');
+    let formInputEmail = form.find('.form-control[name="feedback"]');
+    let formOkMessage  = form.find('.form-actions-message');
+
+    let name      = form.find('input[name="name"]').val();
+    let email     = form.find('input[name="email"]').val();
+    let phone     = form.find('input[name="phone"]').val();
+    let messenger = form.find('input[name="messenger"]').val();
+    let message   = form.find('textarea[name="message"]').val();
+
+    if(formInput.val().length > 0) {
+      $.ajax({
+        type: "POST",
+        data: {
+          'name': name,
+          'email': email,
+          'phone': phone,
+          'messenger': messenger,
+          'message': message
+        },
+        success: function() {
+          clear_form();
+          formInput.closest('.form-group').removeClass('is-invalid');
+          formOkMessage.addClass('show');
+        },
+        error: function() {
+        }
+      });
+    } else {
+      formInput.closest('.form-group').addClass('is-invalid');
+    }
+
+    return false;
+  });
+
 });
+
+

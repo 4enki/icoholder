@@ -93,6 +93,10 @@ textarea {
     width: 100%;
   }
 
+  &-status {
+
+  }
+
   @media #{$lg} {
     justify-content: flex-end;
 
