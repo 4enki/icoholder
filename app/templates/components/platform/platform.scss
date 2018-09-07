@@ -70,8 +70,8 @@
   flex-wrap: wrap;
 
   @media #{$lg} {
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
