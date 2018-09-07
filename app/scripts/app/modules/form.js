@@ -18,7 +18,11 @@ $(document).ready(function() {
     let form           = $(this);
     let formInput      = form.find('.form-control');
     let formInputEmail = form.find('.form-control[name="feedback"]');
-    let formOkMessage  = form.find('.form-actions-message');
+    let formOkMessage  = form.find('._form-actions-status');
+
+    function clear_form() {
+      formInput.val('');
+    }
 
     let name      = form.find('input[name="name"]').val();
     let email     = form.find('input[name="email"]').val();
@@ -37,11 +41,16 @@ $(document).ready(function() {
           'message': message
         },
         success: function() {
+          console.log('form ._contact-form status: success');
+
           clear_form();
           formInput.closest('.form-group').removeClass('is-invalid');
           formOkMessage.addClass('show');
         },
         error: function() {
+          console.log('form ._contact-form status: error');
+
+          formInput.closest('.form-group').addClass('is-invalid');
         }
       });
     } else {
