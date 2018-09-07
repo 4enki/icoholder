@@ -59,8 +59,6 @@ $(document).ready(function() {
       });
     } else {
 
-      console.log(formInput.val().length);
-
       formInput.each(function() {
 
         if ($(this).val().length > 0) {
@@ -69,7 +67,6 @@ $(document).ready(function() {
           $(this).closest('.form-group').addClass('is-valid');
 
         } else {
-
 
           $(this).closest('.form-group').removeClass('is-valid');
           $(this).closest('.form-group').addClass('is-invalid');
