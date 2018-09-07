@@ -4,8 +4,11 @@ $(document).ready(function(){
 
   owl.owlCarousel({
     items: 1,
+    startPosition: 0,
     nav: false,
-    loop: true
+    loop: true,
+    URLhashListener: true,
+    startPosition: 'URLHash'
   });
 
   $(".services_nav-left").click(function(){
