@@ -1,5 +1,5 @@
 .services {
-  background-color: #0C0D12;
+  background-color: $dark-bg;
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: hidden;
@@ -56,11 +56,12 @@
     color: #ffffff;
     transition: all .3s ease;
     cursor: pointer;
+    opacity: .35;
 
-    &.ghost {
-      opacity: .35;
-
-      &:hover { opacity: 1; }
+    &:hover {
+      opacity: 1;
+      color: #D91AA2;
+      border-color: darken(#D91AA2, 20%);
     }
 
     svg { position: relative; }
@@ -69,11 +70,6 @@
       left: -14px;
 
       svg { top: 2px; }
-
-      &:hover {
-        color: #D91AA2;
-        border-color: darken(#D91AA2, 20%);
-      }
 
       @media #{$lg} {
         left: -28px;
@@ -84,11 +80,6 @@
       right: -14px;
 
       svg { top: -2px; }
-
-      &:hover {
-        color: #D91AA2;
-        border-color: darken(#D91AA2, 20%);
-      }
 
       @media #{$lg} {
         right: -28px;

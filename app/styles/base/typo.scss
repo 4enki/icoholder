@@ -118,6 +118,7 @@ code {
     top: -45px;
     left: -30px;
     z-index: 0;
+    font-weight: bold;
 
     @media #{$lg} {
       font-size: 156px;
@@ -130,6 +131,9 @@ code {
   &_title {
     position: relative;
     z-index: 1;
+    font-weight: bold;
+
+    h2, .h2 { font-weight: bold; }
   }
 
   &_description {
