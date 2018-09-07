@@ -86,7 +86,7 @@
 
   
 
-    <link href="assets/styles/style.css?v=ba6becd4c90f650e84f36516275d7356" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 
@@ -222,7 +222,6 @@
 <section
   id="platform"
   class="platform emerge"
-  data-spin="true"
   data-expose="true"
 >
   <!-- begin .platform_wrap -->
@@ -330,7 +329,6 @@
 <section
   id="services"
   class="services emerge"
-  data-spin="true"
   data-expose="true"
 >
   <!-- begin .services_wrap -->
@@ -340,8 +338,9 @@
     <div class="headline headline-dark emerge"
       data-effect="slide"
       data-expose="true"
-      data-left="20cm"
+      data-left="40cm"
       data-hold="90"
+     data-opaque="true"
     >
       <!-- begin .headline_title -->
       <div class="headline_title">
@@ -380,7 +379,7 @@
     <!-- begin .services_group -->
     <div class="services_group">
       <!-- begin .services_nav -->
-      <div class="services_nav services_nav-left ghost">
+      <div class="services_nav services_nav-left">
         <svg width="12" height="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="leftb" d="M22 17l-3 3.07L21.863 23"/><filter x="-256.7%" y="-95%" width="613.3%" height="356.7%" filterUnits="objectBoundingBox" id="lefta"><feMorphology radius=".7" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/><feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/><feMorphology radius="1" in="SourceAlpha" result="shadowInner"/><feOffset dy="2" in="shadowInner" result="shadowInner"/><feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0" in="shadowBlurOuter1"/></filter></defs><g transform="translate(-14 -15)" fill="none" fill-rule="evenodd"><use fill="#000" filter="url(#lefta)" xlink:href="#leftb"/><use stroke="currentColor" stroke-width="1.4" xlink:href="#leftb"/></g></svg>
       </div>
       <!-- end .services_nav -->
@@ -1396,7 +1395,13 @@
   <div class="clients_wrap">
 
     <!-- begin .headline -->
-    <div class="headline headline-dark">
+    <div
+      class="headline headline-dark emerge"
+      data-effect="slide"
+      data-expose="true"
+      data-right="50cm"
+      data-hold="205"
+    >
       <!-- begin .headline_title -->
       <div class="headline_title">
         <h2>Clients<span class="text-pink">.</span></h2>
@@ -1411,7 +1416,7 @@
     <!-- end .headline -->
 
     <!-- begin .clients_list -->
-    <div class="clients_list">
+    <div class="clients_list emerge">
       <ul class="clients-list">
         <li class="clients_item"><a href="javascript:void(0);" class="clients_link"><img src="assets/images/hoqu.png" alt="" width="103" height="36"></a></li>
         <li class="clients_item"><a href="javascript:void(0);" class="clients_link"><img src="assets/images/coinvest.png" alt="" width="133" height="28"></a></li>
@@ -1458,7 +1463,13 @@
   <div class="contact_wrap">
 
     <!-- begin .headline -->
-    <div class="headline">
+    <div
+      class="headline emerge"
+      data-effect="slide"
+      data-expose="true"
+      data-left="25cm"
+      data-hold="90"
+    >
       <!-- begin .headline_title -->
       <div class="headline_title">
         <h2><span class="text-pink">Let’s</span> work <span class="text-pink">together.</span></h2>
@@ -1476,7 +1487,13 @@
       <!-- begin .contact-form_wrap -->
       <div class="contact-form_wrap">
         <!-- begin .contact-form_col -->
-        <div class="contact-form_col">
+        <div
+          class="contact-form_col emerge"
+          data-effect="slide"
+          data-expose="true"
+          data-left="-10cm"
+          data-hold="225"
+        >
           <!-- begin .form-group -->
           <div class="form-group">
             <label for="name" class="form-label">Your Name</label>
@@ -1529,7 +1546,13 @@
         </div>
         <!-- end .contact-form_col -->
         <!-- begin .contact-form_col -->
-        <div class="contact-form_col">
+        <div
+          class="contact-form_col emerge"
+          data-effect="slide"
+          data-expose="true"
+          data-right="5cm"
+          data-hold="339"
+        >
           <!-- begin .form-group -->
           <div class="form-group">
             <!-- begin .form-service-list -->
@@ -1576,7 +1599,13 @@
       </div>
       <!-- end .contact-form_wrap -->
       <!-- begin .form-actions -->
-      <div class="form-actions">
+      <div
+        class="form-actions emerge"
+        data-continue="true"
+        data-effect="relax"
+        data-scale=".12"
+        data-origin="bottom"
+      >
         <!-- begin .form-actions-status -->
         <div class="form-actions-status _form-actions-status">
           <span>you <span class="text-pink">request has been sent.</span>..</span>
@@ -1695,13 +1724,13 @@
 <!-- begin .floating-controls -->
 <div class="floating-controls emerge">
   <!-- begin .contact-up -->
-  <div class="contact-up" id="contacter">
+  <a class="contact-up _go-to" href="#contact">
     <!-- begin .contact-up_box -->
     <div class="contact-up_box">
       <svg width="36" height="24" viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="nonzero"><path d="M35.283 0H.717A.728.728 0 0 0 0 .74v19.479C0 22.304 1.645 24 3.668 24h28.664C34.355 24 36 22.304 36 20.219V.739A.729.729 0 0 0 35.283 0zm-.717 20.219c0 1.27-1.002 2.302-2.234 2.302H3.668c-1.232 0-2.234-1.033-2.234-2.302V2.352L17.546 15.95a.703.703 0 0 0 .908 0L30.92 5.452a.755.755 0 0 0 .102-1.04.702.702 0 0 0-1.009-.105L18 14.423 2.663 1.479h31.903v18.74z"/><path d="M32.902 3.164a.428.428 0 0 0-.612-.064l-.13.11a.453.453 0 0 0-.062.626.43.43 0 0 0 .612.064l.13-.11a.453.453 0 0 0 .062-.626z"/></g></svg>
     </div>
     <!-- end .contact-up_box -->
-  </div>
+  </a>
   <!-- end .contact-up -->
   <!-- begin .rocket-up -->
   <div class="rocket-up" id="scroller">
@@ -1716,7 +1745,7 @@
 <!-- end .floating-controls -->
 
 
-    <script src="assets/scripts/vendor.js?v=df2e3332ba23368cc2a66058c4bc605f"></script>
-    <script src="assets/scripts/app.js?v=74722a760d5252783acd115859d91bf1"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>

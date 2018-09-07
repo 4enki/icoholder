@@ -75,7 +75,7 @@ $(document).ready(function () {
   var headerHeight = header.outerHeight();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > headerHeight * 2) {
+    if ($(this).scrollTop() > headerHeight * .31) {
       $('#scroller').fadeIn();
     } else {
       $('#scroller').fadeOut();
@@ -125,10 +125,10 @@ $(function () {
 
   var typed = new Typed('._text-mutation', {
     strings: ['ICO campaign', 'bounty campaign', 'telegram support', 'advisors team'],
-    typeSpeed: 183,
-    startDelay: 185,
-    backSpeed: 142,
-    backDelay: 1297,
+    typeSpeed: 87,
+    startDelay: 58,
+    backSpeed: 101,
+    backDelay: 903,
     loop: true,
     loopCount: false,
     showCursor: true,
