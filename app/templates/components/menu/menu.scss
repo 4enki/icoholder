@@ -108,6 +108,8 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease;
+    align-items: flex-start;
+    align-content: flex-start;
 
     .menu_item {
       margin-right: 0;
@@ -121,6 +123,7 @@
     &.show {
       opacity: 1;
       visibility: visible;
+      z-index: 10;
     }
   }
 
