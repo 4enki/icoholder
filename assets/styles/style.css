@@ -1412,7 +1412,6 @@ code {
 
 .contact {
   background-color: #fff;
-  border-top: 1px solid #11111B;
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -1998,6 +1997,18 @@ code {
   line-height: 18px;
 }
 
+.header-internal {
+  background-color: #11111b;
+}
+
+.header-internal .header-cover {
+  z-index: 0;
+}
+
+.header-internal .header-description {
+  max-width: 100%;
+}
+
 .top-menu {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2078,6 +2089,8 @@ code {
   opacity: 0;
   visibility: hidden;
   transition: all .3s ease;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .menu-nested .menu_item {
@@ -2092,6 +2105,7 @@ code {
 .menu-nested.show {
   opacity: 1;
   visibility: visible;
+  z-index: 10;
 }
 
 .menu_item {
@@ -2349,6 +2363,135 @@ code {
 
 .media-list_link img {
   vertical-align: bottom;
+}
+
+.events {
+  background-color: #FAFAFA;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+.events_wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.events .headline {
+  max-width: 100%;
+}
+
+.events .headline:before {
+  content: 'Events.';
+}
+
+.itworks {
+  background-color: #fff;
+  border-top: 1px solid #11111B;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+.itworks_wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.itworks .headline {
+  max-width: 100%;
+}
+
+.itworks .headline:before {
+  content: 'It Works.';
+}
+
+.raisedhere {
+  background-color: #11111B;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.raisedhere_wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.raisedhere .headline {
+  max-width: 100%;
+}
+
+.raisedhere .headline:before {
+  content: 'Raised Here.';
+}
+
+.raisedhere_bubble {
+  margin-top: 120px;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0;
+}
+
+.raisedhere_bubble_wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.raisedhere_bubble-list {
+  padding: 120px 0 80px 0;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.raisedhere_bubble_item {
+  margin-bottom: 50px;
+}
+
+.raisedhere_bubble-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.raisedhere_bubble-value {
+  opacity: 0.9;
+  font-family: 'Poppins-Bold';
+  font-size: 45px;
+  color: #D91AA2;
+  letter-spacing: 0;
+}
+
+.raisedhere_bubble-description {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-family: 'Poppins-Regular';
+  font-size: 13px;
+  color: #11111B;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.raisedhere_bubble-info {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  opacity: 0.5;
+  font-family: 'Poppins-Regular';
+  font-size: 10px;
+  color: #11111B;
+  letter-spacing: 0;
+  text-align: right;
 }
 
 .services {
@@ -3741,13 +3884,16 @@ code {
   }
   .header .header-description {
     font-size: 22px;
-    line-height: 22px;
+    line-height: 30px;
   }
   .header .actions-box {
     align-items: flex-start;
     align-content: flex-start;
     width: auto;
     justify-content: flex-start;
+  }
+  .header-internal .header-description {
+    max-width: 750px;
   }
   .top-menu {
     padding-top: 65px;
@@ -3822,6 +3968,51 @@ code {
   .media-list_item {
     margin-right: 0;
     margin-bottom: 0;
+  }
+  .events {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .events_wrap {
+    max-width: 1120px;
+    padding: 0;
+  }
+  .events .headline {
+    max-width: 100%;
+  }
+  .itworks {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .itworks_wrap {
+    max-width: 1120px;
+    padding: 0;
+  }
+  .itworks .headline {
+    max-width: 100%;
+  }
+  .raisedhere {
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+  .raisedhere_wrap {
+    max-width: 1120px;
+    padding: 0;
+  }
+  .raisedhere .headline {
+    max-width: 100%;
+  }
+  .raisedhere_bubble_wrap {
+    max-width: 1120px;
+    padding: 0;
+    position: relative;
+  }
+  .raisedhere_bubble_item {
+    flex-basis: 33.333333%;
+  }
+  .raisedhere_bubble-description {
+    text-align: justify;
+    max-width: 230px;
   }
   .services {
     overflow: auto;
