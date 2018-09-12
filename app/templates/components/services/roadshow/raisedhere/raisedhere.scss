@@ -1,3 +1,33 @@
 .raisedhere {
+  background-color: $dark-bg;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
+  @media #{$lg} {
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+
+  &_wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media #{$lg} {
+      max-width: 1120px;
+      padding: 0;
+    }
+  }
+
+  .headline {
+    max-width: 100%;
+
+    @media #{$lg} {
+      max-width: 100%;
+    }
+
+    &:before {
+      content: 'Raised Here.';
+    }
+  }
 }
