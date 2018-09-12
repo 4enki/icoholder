@@ -95,7 +95,7 @@
 
     @media #{$lg} {
       font-size: 22px;
-      line-height: 22px;
+      line-height: 30px;
     }
   }
 
@@ -141,6 +141,22 @@
       color: #FFFFFF;
       letter-spacing: 2px;
       line-height: 18px;
+    }
+  }
+
+  &-internal {
+    background-color: #11111b;
+
+    .header-cover {
+      z-index: 0;
+    }
+
+    .header-description {
+      max-width: 100%;
+
+      @media #{$lg} {
+        max-width: 750px;
+      }
     }
   }
 }
