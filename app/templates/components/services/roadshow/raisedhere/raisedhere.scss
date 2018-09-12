@@ -51,13 +51,68 @@
     }
 
     &-list {
-      padding: 120px 0;
+      padding: 120px 0 80px 0;
+      display: flex;
+      align-items: stretch;
+      align-content: stretch;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media #{$lg} {
+
+      }
+    }
+
+    &_item {
+      margin-bottom: 50px;
+
+      @media #{$lg} {
+        flex-basis: 33.333333%;
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+
+    &-value {
+      opacity: 0.9;
+      font-family: 'Poppins-Bold';
+      font-size: 45px;
+      color: #D91AA2;
+      letter-spacing: 0;
+    }
+
+    &-description {
+      margin-top: 10px;
+      opacity: 0.7;
+      font-family: 'Poppins-Regular';
+      font-size: 13px;
+      color: #11111B;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 22px;
+
+      @media #{$lg} {
+        text-align: justify;
+        max-width: 230px;
+      }
     }
 
     &-info {
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 30px;
+      opacity: 0.5;
+      font-family: 'Poppins-Regular';
+      font-size: 10px;
+      color: #11111B;
+      letter-spacing: 0;
+      text-align: right;
     }
   }
 }
