@@ -131,11 +131,9 @@
       margin-right: 0;
     }
 
-    &.is-active {
-      .menu_link {
-        opacity: 1;
-        color: #ffffff;
-      }
+    &.is-active .menu_link {
+      opacity: 1;
+      color: #ffffff;
     }
   }
 
