@@ -147,6 +147,11 @@
   &-internal {
     background-color: #11111b;
 
+    @media #{$lg} {
+      min-height: 880px;
+      max-height: 100vh;
+    }
+
     .header-cover {
       z-index: 0;
     }
