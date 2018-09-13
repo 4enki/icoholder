@@ -27,7 +27,6 @@
   }
 
   &_wrap {
-    padding-top: 0;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -40,6 +39,7 @@
     text-align: left;
 
     @media #{$lg} {
+      padding-top: 0;
       align-items: flex-start;
       align-content: flex-start;
       max-width: 980px;
@@ -126,6 +126,7 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Futura-Medium';
 
     &-mouse {
       position: relative;
@@ -136,7 +137,6 @@
 
     &-help {
       margin-top: 15px;
-      font-family: 'Futura-Medium';
       font-size: 14px;
       color: #FFFFFF;
       letter-spacing: 2px;
@@ -149,7 +149,7 @@
 
     @media #{$lg} {
       min-height: 880px;
-      max-height: 100vh;
+      max-height: 100%;
     }
 
     .header-cover {
