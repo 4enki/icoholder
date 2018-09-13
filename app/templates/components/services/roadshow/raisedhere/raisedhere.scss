@@ -57,10 +57,6 @@
       align-content: stretch;
       justify-content: center;
       flex-wrap: wrap;
-
-      @media #{$lg} {
-
-      }
     }
 
     &_item {
@@ -80,7 +76,7 @@
     }
 
     &-value {
-      opacity: 0.9;
+      opacity: .9;
       font-family: 'Poppins-Bold';
       font-size: 45px;
       color: #D91AA2;
@@ -89,7 +85,7 @@
 
     &-description {
       margin-top: 10px;
-      opacity: 0.7;
+      opacity: .7;
       font-family: 'Poppins-Regular';
       font-size: 13px;
       color: #11111B;
@@ -107,7 +103,7 @@
       position: absolute;
       right: 0;
       bottom: 30px;
-      opacity: 0.5;
+      opacity: .5;
       font-family: 'Poppins-Regular';
       font-size: 10px;
       color: #11111B;
