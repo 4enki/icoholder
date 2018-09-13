@@ -100,10 +100,9 @@
   &-nested {
     position: absolute;
     top: 100%;
-    background-color: rgba(0, 0, 0, .15);
-    margin-top: 5px;
-    padding: 5px 10px;
-    margin: 5px -10px 0 -10px;
+    background-color: rgba(12, 13, 18, .85);
+    padding: 15px 20px;
+    margin: -20px -20px 0 -20px;
     z-index: -10;
     opacity: 0;
     visibility: hidden;
@@ -113,11 +112,15 @@
 
     .menu_item {
       margin-right: 0;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    .menu_link {
+      padding: 0;
     }
 
     &.show {
@@ -134,13 +137,31 @@
       margin-right: 0;
     }
 
-    &.is-active .menu_link {
-      opacity: 1;
-      color: #ffffff;
+    &.is-active {
+
+      .menu_link {
+        opacity: 1;
+        color: #ffffff;
+      }
+
+      .menu-nested {
+
+        .menu_link {
+          opacity: .4;
+
+          &:hover {
+            opacity: 1;
+            color: #ffffff;
+          }
+        }
+      }
     }
   }
 
   &_link {
+    display: flex;
+    align-items: center;
+    align-content: center;
     opacity: .4;
     font-family: 'Futura-Medium';
     font-size: 16px;
