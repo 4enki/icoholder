@@ -1414,6 +1414,7 @@ code {
   background-color: #fff;
   padding-top: 50px;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .contact_wrap {
@@ -1907,7 +1908,6 @@ code {
 }
 
 .header_wrap {
-  padding-top: 0;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1979,6 +1979,7 @@ code {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  font-family: 'Futura-Medium';
 }
 
 .header_scroll-mouse {
@@ -1990,7 +1991,6 @@ code {
 
 .header_scroll-help {
   margin-top: 15px;
-  font-family: 'Futura-Medium';
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 2px;
@@ -2081,10 +2081,9 @@ code {
 .menu-nested {
   position: absolute;
   top: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  margin-top: 5px;
-  padding: 5px 10px;
-  margin: 5px -10px 0 -10px;
+  background-color: rgba(12, 13, 18, 0.85);
+  padding: 15px 20px;
+  margin: -20px -20px 0 -20px;
   z-index: -10;
   opacity: 0;
   visibility: hidden;
@@ -2095,11 +2094,15 @@ code {
 
 .menu-nested .menu_item {
   margin-right: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .menu-nested .menu_item:last-child {
   margin-bottom: 0;
+}
+
+.menu-nested .menu_link {
+  padding: 0;
 }
 
 .menu-nested.show {
@@ -2121,7 +2124,19 @@ code {
   color: #ffffff;
 }
 
+.menu_item.is-active .menu-nested .menu_link {
+  opacity: .4;
+}
+
+.menu_item.is-active .menu-nested .menu_link:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
 .menu_link {
+  display: flex;
+  align-items: center;
+  align-content: center;
   opacity: .4;
   font-family: 'Futura-Medium';
   font-size: 16px;
@@ -2464,7 +2479,7 @@ code {
 }
 
 .raisedhere_bubble-value {
-  opacity: 0.9;
+  opacity: .9;
   font-family: 'Poppins-Bold';
   font-size: 45px;
   color: #D91AA2;
@@ -2473,7 +2488,7 @@ code {
 
 .raisedhere_bubble-description {
   margin-top: 10px;
-  opacity: 0.7;
+  opacity: .7;
   font-family: 'Poppins-Regular';
   font-size: 13px;
   color: #11111B;
@@ -2486,7 +2501,7 @@ code {
   position: absolute;
   right: 0;
   bottom: 30px;
-  opacity: 0.5;
+  opacity: .5;
   font-family: 'Poppins-Regular';
   font-size: 10px;
   color: #11111B;
@@ -3869,6 +3884,7 @@ code {
     max-height: 1020px;
   }
   .header_wrap {
+    padding-top: 0;
     align-items: flex-start;
     align-content: flex-start;
     max-width: 980px;
@@ -3891,6 +3907,10 @@ code {
     align-content: flex-start;
     width: auto;
     justify-content: flex-start;
+  }
+  .header-internal {
+    min-height: 880px;
+    max-height: 100%;
   }
   .header-internal .header-description {
     max-width: 750px;
