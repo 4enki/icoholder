@@ -77,7 +77,8 @@
 
     &-value {
       opacity: .9;
-      font-family: 'Poppins-Bold';
+      font-family: 'Poppins';
+      font-weight: bold;
       font-size: 45px;
       color: #D91AA2;
       letter-spacing: 0;
@@ -86,7 +87,8 @@
     &-description {
       margin-top: 10px;
       opacity: .7;
-      font-family: 'Poppins-Regular';
+      font-family: 'Poppins';
+      font-weight: normal;
       font-size: 13px;
       color: #11111B;
       letter-spacing: 0;
@@ -104,7 +106,8 @@
       right: 0;
       bottom: 30px;
       opacity: .5;
-      font-family: 'Poppins-Regular';
+      font-family: 'Poppins';
+      font-weight: normal;
       font-size: 10px;
       color: #11111B;
       letter-spacing: 0;
