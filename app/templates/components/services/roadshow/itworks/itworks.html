@@ -59,7 +59,16 @@
     <!-- end .itworks_row_bubble -->
     <!-- begin .itworks_row-decorate -->
     <div class="itworks_row-decorate">
-      {% include "./_worldmap.html" %}
+      <!-- begin .dotmap -->
+      <div class="dotmap">
+        <!-- begin .dotmap-world -->
+        <div class="dotmap-world">
+          {% include "./_worldmap.html" %}
+        </div>
+        <!-- end .dotmap-world -->
+        {% include "./_worldmap-dots.html" %}
+      </div>
+      <!-- end .dotmap -->
     </div>
     <!-- end .itworks_row-decorate -->
   </div>

@@ -149,3 +149,13 @@
     }
   }
 }
+
+.dotmap {
+  position: relative;
+
+  &-points {
+    position: absolute;
+    top: 130px;
+    right: 0;
+  }
+}
