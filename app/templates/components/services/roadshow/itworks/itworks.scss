@@ -7,7 +7,7 @@
 
   @media #{$lg} {
     padding-top: 150px;
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
   }
 
   &_wrap {
@@ -39,34 +39,41 @@
     display: flex;
     align-items: center;
     align-content: center;
-    height: 944px;
 
-    &-decorate {
-      background: #11111B;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      background-attachment: scroll;
-      background-position: 0% 0%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      // opacity: 0.25;
-      width: 1073px;
+    &-light {}
+
+    &-dark {
       height: 944px;
-    }
 
-    &_bubble {
-      width: 100%;
-      position: relative;
-      z-index: 10;
-      background: #FFFFFF;
-      box-shadow: 0 9px 19px 0 rgba(0, 0, 0, .07);
-      margin-left: 25%;
-      padding: 62px 0;
-      border-radius: 20px;
+      @at-root .itworks_row {
+
+        &-decorate {
+          background: #11111B;
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 0;
+          background-attachment: scroll;
+          background-position: 0% 0%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          // opacity: 0.25;
+          width: 1073px;
+          height: 944px;
+        }
+
+        &_bubble {
+          width: 100%;
+          position: relative;
+          z-index: 10;
+          background: #FFFFFF;
+          box-shadow: 0 9px 19px 0 rgba(0, 0, 0, .07);
+          margin-left: 30%;
+          padding: 62px 0;
+          border-radius: 10px 0 0 10px;
+          padding: 150px 180px 150px 125px;
+        }
+      }
     }
   }
 }
