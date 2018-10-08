@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption");
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Bold.eot");
+  src: url("../fonts/Poppins/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype"), url("../fonts/Poppins/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Regular.eot");
+  src: url("../fonts/Poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url("../fonts/Futura/Futura-Medium.eot");
+  src: local("Futura-Medium"), local("Futura-Medium"), url("../fonts/Futura/Futura-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Futura/Futura-Medium.woff") format("woff"), url("../fonts/Futura/Futura-Medium.ttf") format("truetype"), url("../fonts/Futura/Futura-Medium.svg#Futura-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -2410,7 +2435,6 @@ code {
   background-color: #fff;
   border-top: 1px solid #11111B;
   padding-top: 50px;
-  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -2426,6 +2450,109 @@ code {
 
 .itworks .headline:before {
   content: 'It Works.';
+}
+
+.itworks_row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.itworks_row-dark {
+  height: 944px;
+  padding: 62px 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.itworks_row-dark .itworks_row-decorate {
+  background: #11111B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1070px;
+  height: 940px;
+}
+
+.itworks_row-dark .itworks_row_bubble {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background: #FFFFFF;
+  box-shadow: 0 9px 19px 0 rgba(0, 0, 0, 0.07);
+  margin-left: 45%;
+  border-radius: 10px 0 0 10px;
+}
+
+.itworks-bubble {
+  padding: 150px 180px 150px 125px;
+}
+
+.itworks-bubble_headline {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  font-family: 'Futura-Medium';
+}
+
+.itworks-bubble_headline-icon {
+  margin-right: 31px;
+}
+
+.itworks-bubble_headline-title {
+  font-size: 22px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.itworks-bubble_headline-title h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.itworks-bubble_description {
+  opacity: .7;
+  font-family: 'Futura-Medium';
+  font-size: 18px;
+  color: #9FA8B0;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.itworks-bubble_description p {
+  font-size: 18px;
+  color: #9FA8B0;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.itworks-bubble_description p:last-child {
+  margin-bottom: 0;
+}
+
+.dotmap {
+  position: relative;
+}
+
+.dotmap-points {
+  position: absolute;
+  top: 130px;
+  right: 0;
 }
 
 .raisedhere {
@@ -2485,7 +2612,8 @@ code {
 
 .raisedhere_bubble-value {
   opacity: .9;
-  font-family: 'Poppins-Bold';
+  font-family: 'Poppins';
+  font-weight: bold;
   font-size: 45px;
   color: #D91AA2;
   letter-spacing: 0;
@@ -2494,7 +2622,8 @@ code {
 .raisedhere_bubble-description {
   margin-top: 10px;
   opacity: .7;
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins';
+  font-weight: normal;
   font-size: 13px;
   color: #11111B;
   letter-spacing: 0;
@@ -2507,7 +2636,8 @@ code {
   right: 0;
   bottom: 30px;
   opacity: .5;
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins';
+  font-weight: normal;
   font-size: 10px;
   color: #11111B;
   letter-spacing: 0;
@@ -4007,7 +4137,6 @@ code {
   }
   .itworks {
     padding-top: 150px;
-    padding-bottom: 150px;
   }
   .itworks_wrap {
     max-width: 1120px;
@@ -4015,6 +4144,15 @@ code {
   }
   .itworks .headline {
     max-width: 100%;
+  }
+  .itworks-bubble_headline {
+    margin-bottom: 30px;
+  }
+  .itworks-bubble_headline-title {
+    max-width: 295px;
+  }
+  .itworks-bubble_description {
+    max-width: 540px;
   }
   .raisedhere {
     padding-top: 200px;
