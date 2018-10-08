@@ -23,9 +23,9 @@
 
   .headline {
     max-width: 100%;
-    padding-bottom: 100px;
 
     @media #{$lg} {
+      padding-bottom: 100px;
       max-width: 100%;
     }
 
