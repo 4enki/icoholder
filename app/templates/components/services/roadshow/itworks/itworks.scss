@@ -7,7 +7,7 @@
 
   @media #{$lg} {
     padding-top: 150px;
-    // padding-bottom: 150px;
+    // padding-bottom: 80px;
   }
 
   &_wrap {
@@ -50,6 +50,8 @@
     &-dark {
       height: 944px;
       padding: 62px 0;
+      margin-top: 80px;
+      margin-bottom: 80px;
 
       @at-root .itworks_row {
 
@@ -85,5 +87,57 @@
 
   &-bubble {
     padding: 150px 180px 150px 125px;
+
+    &_headline {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 10px;
+      font-family: 'Futura-Medium';
+
+      @media #{$lg} {
+        max-width: 300px;
+        margin-bottom: 30px;
+      }
+
+      &-icon {
+        margin-right: 31px;
+      }
+
+      &-title {
+        font-size: 22px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 35px;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-size: 22px;
+          color: #000000;
+          letter-spacing: 0;
+          line-height: 35px;
+        }
+      }
+    }
+
+    &_description {
+      opacity: .7;
+      font-family: Helvetica;
+      font-size: 18px;
+      color: #9FA8B0;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 30px;
+
+      p {
+        font-size: 18px;
+        color: #9FA8B0;
+        letter-spacing: 0;
+        text-align: justify;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+    }
   }
 }
