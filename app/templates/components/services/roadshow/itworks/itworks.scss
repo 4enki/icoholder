@@ -25,7 +25,7 @@
     max-width: 100%;
 
     @media #{$lg} {
-      padding-bottom: 100px;
+      // padding-bottom: 100px;
       max-width: 100%;
     }
 
@@ -42,7 +42,7 @@
 
     &-light {
 
-      @at-root .itworks_row {
+      @at-root .itworks_row-light .itworks_row {
 
       }
     }
@@ -66,8 +66,8 @@
           background-repeat: no-repeat;
           background-size: cover;
           // opacity: 0.25;
-          width: 1073px;
-          height: 944px;
+          width: 1070px;
+          height: 940px;
         }
 
         &_bubble {
@@ -77,7 +77,7 @@
           z-index: 10;
           background: #FFFFFF;
           box-shadow: 0 9px 19px 0 rgba(0, 0, 0, .07);
-          margin-left: 30%;
+          margin-left: 45%;
           border-radius: 10px 0 0 10px;
         }
       }
