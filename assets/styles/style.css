@@ -92,6 +92,12 @@
   }
 }
 
+@keyframes dasharray {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .container-fluid,
 .container {
   margin-right: auto;
@@ -2553,6 +2559,10 @@ code {
   position: absolute;
   top: 130px;
   right: 0;
+}
+
+.dotmap-points svg path {
+  animation: dasharray 5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .raisedhere {
