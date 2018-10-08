@@ -60,3 +60,7 @@
   50%  { opacity: 0; }
   100% { opacity: 1; }
 }
+
+@keyframes dasharray {
+  100% { stroke-dashoffset: 0; }
+}

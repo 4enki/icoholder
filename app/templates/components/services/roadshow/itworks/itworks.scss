@@ -157,5 +157,9 @@
     position: absolute;
     top: 130px;
     right: 0;
+
+    svg path {
+      animation: dasharray 5s cubic-bezier(.23, 1, .32, 1) forwards;
+    }
   }
 }
