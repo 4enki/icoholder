@@ -2,7 +2,7 @@
   background-color: #fff;
   border-top: 1px solid #11111B;
   padding-top: 50px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
   overflow: hidden;
 
   @media #{$lg} {
@@ -23,6 +23,7 @@
 
   .headline {
     max-width: 100%;
+    padding-bottom: 100px;
 
     @media #{$lg} {
       max-width: 100%;
@@ -30,6 +31,42 @@
 
     &:before {
       content: 'It Works.';
+    }
+  }
+
+  &_row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 944px;
+
+    &-decorate {
+      background: #11111B;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-attachment: scroll;
+      background-position: 0% 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // opacity: 0.25;
+      width: 1073px;
+      height: 944px;
+    }
+
+    &_bubble {
+      width: 100%;
+      position: relative;
+      z-index: 10;
+      background: #FFFFFF;
+      box-shadow: 0 9px 19px 0 rgba(0, 0, 0, .07);
+      margin-left: 25%;
+      padding: 62px 0;
+      border-radius: 20px;
     }
   }
 }
