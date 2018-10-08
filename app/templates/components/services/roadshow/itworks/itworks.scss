@@ -158,8 +158,22 @@
     top: 130px;
     right: 0;
 
-    svg ellipse {
-      animation: dasharray 5s cubic-bezier(.23, 1, .32, 1) forwards;
+    svg#dotmap-points {
+      overflow: inherit;
     }
+  }
+}
+
+.banaan {
+  fill: #fff;
+  transition: all .2s ease;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  animation: pulse .25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse {
+  to {
+    rx: 45;
+    ry: 45;
   }
 }

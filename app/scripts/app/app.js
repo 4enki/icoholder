@@ -5,3 +5,4 @@
 //= modules/header
 //= modules/menu
 //= modules/plans
+//= modules/dotmap
