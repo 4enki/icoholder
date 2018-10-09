@@ -182,17 +182,20 @@
 }
 
 #globe-ways path {
-  transition: all .36s ease;
+  transition: all .5s ease;
 }
 
 .dash {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 1s linear forwards;
+  animation: dash 1.5s linear forwards;
 }
 
 
 @keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
   to {
     stroke-dashoffset: 0;
   }
