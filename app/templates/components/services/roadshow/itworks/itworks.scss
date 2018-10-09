@@ -164,6 +164,16 @@
   }
 }
 
+.globe {
+  position: relative;
+
+  &-ways {
+    position: absolute;
+    top: 63px;
+    right: 23px;
+  }
+}
+
 .banaan {
   fill: #fff;
   transition: all .6s ease;
