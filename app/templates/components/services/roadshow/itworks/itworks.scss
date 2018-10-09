@@ -181,6 +181,23 @@
   animation: pulse .65s infinite cubic-bezier(.66, 0, 0, 1);
 }
 
+#globe-ways path {
+  transition: all .36s ease;
+}
+
+.dash {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1s linear forwards;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes pulse {
   to {
     rx: 45;
