@@ -2557,12 +2557,22 @@ code {
 
 .dotmap-points {
   position: absolute;
-  top: 130px;
-  right: 0;
+  top: 124px;
+  right: -1px;
 }
 
 .dotmap-points svg#dotmap-points {
   overflow: inherit;
+}
+
+.globe {
+  position: relative;
+}
+
+.globe-ways {
+  position: absolute;
+  top: 63px;
+  right: 23px;
 }
 
 .banaan {

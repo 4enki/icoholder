@@ -123,17 +123,20 @@ $(document).ready(function () {
 });
 $(function () {
 
-  var typed = new Typed('._text-mutation', {
-    strings: ['ICO campaign', 'bounty campaign', 'telegram support', 'advisors team'],
-    typeSpeed: 87,
-    startDelay: 58,
-    backSpeed: 101,
-    backDelay: 903,
-    loop: true,
-    loopCount: false,
-    showCursor: true,
-    cursorChar: "."
-  });
+  if ($('._text-mutation').length) {
+
+    var typed = new Typed('._text-mutation', {
+      strings: ['ICO campaign', 'bounty campaign', 'telegram support', 'advisors team'],
+      typeSpeed: 87,
+      startDelay: 58,
+      backSpeed: 101,
+      backDelay: 903,
+      loop: true,
+      loopCount: false,
+      showCursor: true,
+      cursorChar: "."
+    });
+  }
 });
 $(document).ready(function () {
   var topMenuWrap = $('.top-menu');
@@ -170,17 +173,21 @@ $(document).ready(function () {
     tabs: '> .plans_menu > ul > li'
   });
 });
-setRandomClass();
+$(document).ready(function () {
 
-setInterval(function () {
   setRandomClass();
-}, 1000);
 
-function setRandomClass() {
-  var ul = $("svg#dotmap-points");
-  var items = ul.find("ellipse");
-  var number = items.length;
-  var random = Math.floor(Math.random() * number);
-  items.removeClass("banaan");
-  items.eq(random).addClass("banaan");
-}
+  setInterval(function () {
+    setRandomClass();
+  }, 1000);
+
+  function setRandomClass() {
+    var ul = $("svg#dotmap-points");
+    var items = ul.find("ellipse");
+    var number = items.length;
+    var random = Math.floor(Math.random() * number);
+    items.removeClass("banaan");
+    items.eq(random).addClass("banaan");
+  }
+});
+// = modules/globe
