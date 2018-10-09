@@ -6,4 +6,4 @@
 //= modules/menu
 //= modules/plans
 //= modules/dotmap
-//= modules/globe
+// = modules/globe
