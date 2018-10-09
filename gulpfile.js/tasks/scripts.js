@@ -35,7 +35,7 @@ gulp.task('scripts:vendor', function() {
     .pipe(plumber({ errorHandler: config.errorHandler }))
     .pipe(rigger())
     // .pipe(eslint.format())
-    // .pipe(babel())
+    .pipe(babel())
     .pipe(uglify())
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest(config.build.scripts))
