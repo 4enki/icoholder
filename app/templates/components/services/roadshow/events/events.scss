@@ -113,4 +113,34 @@
   &-body {
     padding: 15px;
   }
+
+  &-who {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    &_photo {
+      margin-right: 15px;
+
+      img {
+        display: block;
+        vertical-align: bottom;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .15);
+      }
+    }
+  }
+
+  &-where {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    &_icon {
+      color: #34495E;
+      margin-right: 8px;
+    }
+  }
 }
