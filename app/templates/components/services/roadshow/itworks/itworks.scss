@@ -183,7 +183,7 @@
   animation: pulse .65s infinite cubic-bezier(.66, 0, 0, 1);
 }
 
-#globe-ways path {
+#globe-ways path { /* sass-lint:disable-line no-ids */
   transition: all .5s ease;
 }
 
