@@ -40,12 +40,14 @@
     align-items: center;
     align-content: center;
 
+    /*
     &-light {
 
       @at-root .itworks_row-light .itworks_row {
 
       }
     }
+    */
 
     &-dark {
       height: 944px;
@@ -193,12 +195,9 @@
 
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+  from { stroke-dashoffset: 1000; }
+
+  to { stroke-dashoffset: 0; }
 }
 
 @keyframes pulse {
