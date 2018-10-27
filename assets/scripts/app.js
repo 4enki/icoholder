@@ -190,4 +190,20 @@ $(document).ready(function () {
     items.eq(random).addClass("banaan");
   }
 });
-// = modules/globe
+$(document).ready(function () {
+
+  setRandomClass1();
+
+  setInterval(function () {
+    setRandomClass1();
+  }, 3000);
+
+  function setRandomClass1() {
+    var ul = $("svg#globe-ways");
+    var items = ul.find("path");
+    var number = items.length;
+    var random = Math.floor(Math.random() * number);
+    items.removeClass("dash");
+    items.eq(random).addClass("dash");
+  }
+});

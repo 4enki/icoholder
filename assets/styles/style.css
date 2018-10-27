@@ -92,12 +92,6 @@
   }
 }
 
-@keyframes dasharray {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
 .container-fluid,
 .container {
   margin-right: auto;
@@ -2437,6 +2431,202 @@ code {
   content: 'Events.';
 }
 
+.events-list {
+  padding-top: 80px;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+}
+
+.event {
+  min-height: 290px;
+  margin-right: 30px;
+  flex-basis: 33.33333333%;
+  cursor: pointer;
+}
+
+.event:last-child {
+  margin-right: 0;
+}
+
+.event-box {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 9px 19px 0 rgba(0, 0, 0, 0.07);
+  border: 0;
+  position: relative;
+}
+
+.event-box:hover {
+  box-shadow: 0 4px 20px #cddbe4;
+}
+
+.event-date {
+  position: absolute;
+  padding: 14px 10px 10px 10px;
+  width: 90px;
+  height: 90px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 22px;
+  color: #34495E;
+  letter-spacing: .17px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.event-date_day {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.event-date_month {
+  margin-top: 4px;
+}
+
+.event-cover {
+  min-height: 180px;
+  height: 180px;
+  background-color: #11111B;
+  box-shadow: 0 4px 20px 0 rgba(210, 224, 233, 0.8);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.event-cover_bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-body {
+  padding: 15px;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.event-who {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.event-who_photo {
+  margin-right: 15px;
+  min-width: 60px;
+}
+
+.event-who_photo img {
+  display: block;
+  vertical-align: bottom;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.event-who_name {
+  padding-top: 8px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 24px;
+  color: #34495E;
+  letter-spacing: .17px;
+  margin-bottom: 8px;
+}
+
+.event-where {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 12px;
+  color: #5C6A79;
+  letter-spacing: .1px;
+}
+
+.event-where_icon {
+  color: #34495E;
+  margin-right: 8px;
+}
+
+.event-status {
+  width: 100%;
+  margin-top: auto;
+  padding: 15px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #5C6A79;
+  letter-spacing: .1px;
+}
+
+.event-status_item {
+  margin-right: 44px;
+  position: relative;
+}
+
+.event-status_item.ghost {
+  opacity: .4;
+}
+
+.event-status_item:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 18px;
+  opacity: .1;
+  background-color: #34495E;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -22px;
+}
+
+.event-status_item:last-child {
+  margin-right: 0;
+}
+
+.event-status_item:last-child:after {
+  content: none;
+}
+
 .itworks {
   background-color: #fff;
   border-top: 1px solid #11111B;
@@ -2463,6 +2653,14 @@ code {
   display: flex;
   align-items: center;
   align-content: center;
+  /*
+    &-light {
+
+      @at-root .itworks_row-light .itworks_row {
+
+      }
+    }
+    */
 }
 
 .itworks_row-dark {
@@ -2580,6 +2778,26 @@ code {
   transition: all .6s ease;
   box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
   animation: pulse 0.65s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+#globe-ways path {
+  /* sass-lint:disable-line no-ids */
+  transition: all .5s ease;
+}
+
+.dash {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes pulse {
