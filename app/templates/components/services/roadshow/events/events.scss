@@ -42,7 +42,7 @@
 }
 
 .event {
-  min-height: 314px;
+  min-height: 290px;
   margin-right: 30px;
   flex-basis: 33.33333333%;
   min-width: 33.33333333%;
@@ -71,16 +71,28 @@
 
   &-date {
     position: absolute;
+    padding: 14px 10px 10px 10px;
     width: 90px;
     height: 90px;
     border-bottom-right-radius: 10px;
     background-color: #fff;
-    font-family: Helvetica;
-    font-size: 24px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 28px;
     color: #34495E;
     letter-spacing: 0.17px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
     z-index: 1;
+
+    &_day {
+      font-size: 24px;
+      font-weight: bold;
+    }
   }
 
   &-cover {
@@ -116,11 +128,12 @@
 
   &-who {
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 
     &_photo {
       margin-right: 15px;
+      min-width: 60px;
 
       img {
         display: block;
@@ -131,16 +144,71 @@
         box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .15);
       }
     }
+
+    &_name {
+      padding-top: 8px;
+      font-family: 'Roboto';
+      font-size: 20px;
+      line-height: 24px;
+      color: #34495E;
+      letter-spacing: 0.17px;
+      margin-bottom: 8px;
+    }
   }
 
   &-where {
     display: flex;
     align-items: center;
     align-content: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 12px;
+    color: #5C6A79;
+    letter-spacing: 0.1px;
 
     &_icon {
       color: #34495E;
       margin-right: 8px;
+    }
+  }
+
+  &-status {
+    margin-top: 20px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color: #5C6A79;
+    letter-spacing: 0.1px;
+
+    &_item {
+      margin-right: 44px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        opacity: 0.1;
+        background-color: #34495E;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -22px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          content: none;
+        }
+      }
     }
   }
 }
