@@ -163,7 +163,7 @@
       font-size: 20px;
       line-height: 24px;
       color: #34495E;
-      letter-spacing: 0.17px;
+      letter-spacing: .17px;
       margin-bottom: 8px;
     }
   }
@@ -176,7 +176,7 @@
     font-size: 12px;
     line-height: 12px;
     color: #5C6A79;
-    letter-spacing: 0.1px;
+    letter-spacing: .1px;
 
     &_icon {
       color: #34495E;
@@ -197,7 +197,7 @@
     font-size: 12px;
     line-height: 12px;
     color: #5C6A79;
-    letter-spacing: 0.1px;
+    letter-spacing: .1px;
 
     &_item {
       margin-right: 44px;
@@ -212,7 +212,7 @@
         position: absolute;
         width: 1px;
         height: 18px;
-        opacity: 0.1;
+        opacity: .1;
         background-color: #34495E;
         top: 50%;
         transform: translateY(-50%);
