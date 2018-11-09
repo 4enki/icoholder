@@ -175,13 +175,13 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 
-  setRandomClass();
+  setDotMap();
 
   setInterval(function () {
-    setRandomClass();
-  }, 1000);
+    setDotMap();
+  }, 2000);
 
-  function setRandomClass() {
+  function setDotMap() {
     var ul = $("svg#dotmap-points");
     var items = ul.find("ellipse");
     var number = items.length;
@@ -192,15 +192,15 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 
-  setRandomClass1();
+  setGlobeWays();
 
   setInterval(function () {
-    setRandomClass1();
-  }, 3000);
+    setGlobeWays();
+  }, 1500);
 
-  function setRandomClass1() {
+  function setGlobeWays() {
     var ul = $("svg#globe-ways");
-    var items = ul.find("path");
+    var items = ul.find("path[stroke]");
     var number = items.length;
     var random = Math.floor(Math.random() * number);
     items.removeClass("dash");
