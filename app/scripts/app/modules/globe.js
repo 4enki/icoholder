@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
-  setRandomClass1();
+  setGlobeWays();
 
   setInterval(function () {
-    setRandomClass1();
-  }, 3000);
+    setGlobeWays();
+  }, 1500);
 
-  function setRandomClass1() {
+  function setGlobeWays() {
     let ul     = $("svg#globe-ways");
-    let items  = ul.find("path");
+    let items  = ul.find("path[stroke]");
     let number = items.length;
     let random = Math.floor( (Math.random() * number) );
     items.removeClass("dash");
@@ -16,5 +16,3 @@ $(document).ready(function(){
   }
 
 });
-
-

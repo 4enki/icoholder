@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-  setRandomClass();
+  setDotMap();
 
   setInterval(function () {
-    setRandomClass();
+    setDotMap();
   }, 2000);
 
-  function setRandomClass() {
+  function setDotMap() {
     let ul     = $("svg#dotmap-points");
     let items  = ul.find("ellipse");
     let number = items.length;
