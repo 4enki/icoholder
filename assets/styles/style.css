@@ -2800,8 +2800,8 @@ code {
 
 @keyframes pulse {
   0%, 100% {
-    rx: inherit;
-    ry: inherit;
+    rx: 1%;
+    ry: 2%;
   }
   25% {
     rx: 7;
