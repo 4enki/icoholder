@@ -215,10 +215,10 @@
 }
 
 .banaan {
-  fill: #fff;
-  transition: all .6s ease;
-  box-shadow: 0 0 0 0 rgba(232, 76, 61, .7);
-  animation: pulse .65s infinite cubic-bezier(.66, 0, 0, 1);
+  // transition: all 1.25s cubic-bezier(0.86, 0, 0.07, 1);
+  animation: pulse 1.25s 1 cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25);
+  svg-shadow: 1px 1px 9px #D91AA2;
 }
 
 #globe-ways path { /* sass-lint:disable-line no-ids */
@@ -228,7 +228,7 @@
 .dash {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 1.5s linear forwards;
+  animation: dash .35s linear forwards;
 }
 
 @keyframes dash {
@@ -238,8 +238,16 @@
 }
 
 @keyframes pulse {
-  to {
-    rx: 45;
-    ry: 45;
+  0%, 100%   {
+    rx: inherit;
+    ry: inherit;
+  }
+  25% {
+    rx: 7;
+    ry: 7;
+  }
+  50% {
+    rx: 16;
+    ry: 16;
   }
 }

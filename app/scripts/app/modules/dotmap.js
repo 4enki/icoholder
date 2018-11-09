@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   setInterval(function () {
     setRandomClass();
-  }, 1000);
+  }, 2000);
 
   function setRandomClass() {
     let ul     = $("svg#dotmap-points");
