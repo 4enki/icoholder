@@ -179,7 +179,7 @@ $(document).ready(function () {
 
   setInterval(function () {
     setDotMap();
-  }, 2000);
+  }, 2600);
 
   function setDotMap() {
     var ul = $("svg#dotmap-points");
