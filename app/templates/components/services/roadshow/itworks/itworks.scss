@@ -120,7 +120,7 @@
           border-bottom-right-radius: 10px;
 
           @media #{$big} {
-            width: 100% !important;
+            width: 100% !important; /* sass-lint:disable-line no-important */
             background-position: 0 50%;
             border-radius: 0;
           }
@@ -248,7 +248,7 @@
       overflow: inherit;
 
       ellipse {
-        transition: all 1.35s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 1.35s cubic-bezier(.86, 0, .07, 1);
       }
     }
   }
@@ -269,7 +269,7 @@
 }
 
 .banaan {
-  -webkit-svg-shadow: 1px 1px 10px rgba(217, 26, 162, .55);
+  -webkit-svg-shadow: 1px 1px 10px rgba(217, 26, 162, .55); /* sass-lint:disable-line no-vendor-prefixes */
   rx: 16.08;
   ry: 16.7889;
   color: darken(#D91AA2, 5%);
@@ -289,7 +289,7 @@
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dashs 3s ease forwards;
-  -webkit-svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25);
+  -webkit-svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25); /* sass-lint:disable-line no-vendor-prefixes */
 }
 
 @keyframes dashs {
