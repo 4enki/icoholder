@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   setInterval(function () {
     setDotMap();
-  }, 2000);
+  }, 2600);
 
   function setDotMap() {
     let ul     = $("svg#dotmap-points");
