@@ -51,14 +51,30 @@
       }
     }
 
-    /*
     &-light {
 
       @at-root .itworks_row-light .itworks_row {
 
+        &_wrap {
+
+          @media #{$lg} {
+            display: flex;
+            align-items: center;
+            align-content: center;
+          }
+
+        }
+
+        &_bubble {
+
+          @media #{$lg} {
+            padding-left: 0;
+            min-width: 845px;
+          }
+        }
+
       }
     }
-    */
 
     &-decorate {
       display: none;
@@ -100,10 +116,13 @@
           // opacity: 0.25;
           width: 1070px;
           height: 940px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
 
           @media #{$big} {
             width: 100% !important;
             background-position: 0 50%;
+            border-radius: 0;
           }
         }
 
@@ -207,10 +226,11 @@
 
 .dotmap {
   position: relative;
+  max-width: 593px;
 
   &-world {
     position: relative;
-    right: -140px;
+    // right: -140px;
   }
 
   &-points {
