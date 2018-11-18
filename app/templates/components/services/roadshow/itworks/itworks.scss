@@ -69,7 +69,7 @@
 
           @media #{$lg} {
             padding-left: 0;
-            min-width: 845px;
+            min-width: 750px;
           }
         }
 
@@ -145,6 +145,7 @@
           }
 
           .itworks-bubble_description {
+
             @media #{$big} {
               max-width: 100%;
             }
@@ -230,13 +231,17 @@
 
   &-world {
     position: relative;
-    // right: -140px;
+    // left: -220px;
+
+    @media #{$big} {
+      left: auto;
+    }
   }
 
   &-points {
     position: absolute;
-    top: 124px;
-    right: -1px;
+    top: 125px;
+    right: -90px;
 
     svg#dotmap-points { // sass-lint:disable-line no-ids
       overflow: inherit;
@@ -284,7 +289,7 @@
 .dash {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dashs 5s ease forwards;
+  animation: dashs 3s ease forwards;
   -webkit-svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25);
 }
 
