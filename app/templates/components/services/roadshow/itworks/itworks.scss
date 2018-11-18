@@ -88,7 +88,7 @@
       @at-root .itworks_row-dark .itworks_row {
 
         &-decorate {
-          background: #11111B;
+          background-color: #11111B;
           position: absolute;
           top: 0;
           left: 0;
@@ -100,6 +100,11 @@
           // opacity: 0.25;
           width: 1070px;
           height: 940px;
+
+          @media #{$big} {
+            width: 100% !important;
+            background-position: 0 50%;
+          }
         }
 
         &_bubble {
@@ -114,6 +119,16 @@
           @media #{$lg} {
             z-index: 10;
             margin-left: 45%;
+          }
+
+          @media #{$big} {
+            margin-left: 0;
+          }
+
+          .itworks-bubble_description {
+            @media #{$big} {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -195,7 +210,7 @@
 
   &-world {
     position: relative;
-    right: -120px;
+    right: -140px;
   }
 
   &-points {
@@ -225,33 +240,32 @@
 
 .banaan {
   // transition: all 1.25s cubic-bezier(0.86, 0, 0.07, 1);
-  animation: pulse 1.25s 1 cubic-bezier(0.86, 0, 0.07, 1);
+  animation: pulse 1.25s 1 cubic-bezier(.86, 0, .07, 1);
   -webkit-svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25);
-  svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25);
 }
 
 @keyframes pulse {
-  0%, 100%   {
+  0%, 100% {
     rx: 1%;
     ry: 2%;
   }
+
   25% {
     rx: 7;
     ry: 7;
   }
+
   50% {
     rx: 16;
     ry: 16;
   }
 }
 
-
 .dash {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dashs 5s ease forwards;
   -webkit-svg-shadow: 1px 1px 9px rgba(217, 26, 162, .25);
-  svg-shadow: 1px 1px 9px #D91AA2;
 }
 
 @keyframes dashs {
